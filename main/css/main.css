@@ -6,7 +6,7 @@ body, html{
 	box-sizing: border-box;
 }
 .bg-img {
-	background-image: "../img/cover.jpg";
+	background-image: url("../img/cover.jpg");
 	min-height: 380px;
 	/* Center and scale the image nicely */
 	background-position: center;

@@ -1,5 +1,5 @@
 body, html{
-	height: 100vh;
+	height: 100%;
 	font-family: 'Noto Sans TC', sans-serif;
 }
 *{
@@ -7,7 +7,7 @@ body, html{
 }
 .bg-img {
 	background-image: url("../img/cover.jpg");
-	min-height: 380px;
+	min-height: 100vh;
 	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;

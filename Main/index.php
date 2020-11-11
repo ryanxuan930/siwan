@@ -10,7 +10,7 @@
 <body>
 	<div class="bg-img">
   		<form action="/action_page.php" class="container">
-    		<h1>Let's GO!</h1>
+    		<h1>Wellcome to SIWAN</h1>
 			<label for="id"><b>Studet ID</b></label>
     		<input type="text" placeholder="Enter Your Student ID" name="id" required>
 			<button type="submit" class="btn">START!</button>

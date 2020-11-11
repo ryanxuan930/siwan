@@ -12,7 +12,7 @@
 		<div style="height: 100px;"></div>
   		<form action="/action_page.php" class="container">
     		<h1> Wellcome to SIWAN！</h1>
-			<label for="id" style="color: gray">輸入你的學號，來開始未來之旅</label>
+			<label for="id" style="color: lightgray">輸入你的學號，來開始未來之旅</label>
     		<input type="text" placeholder="Enter Your Student ID" name="id" required>
 			<button type="submit" class="btn">GO</button>
   		</form>

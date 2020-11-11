@@ -11,8 +11,8 @@ body, html{
 	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
-	position: relative;
+	background-size: cover;
+	position: fixed;
 }
 .container {
 	color: white;

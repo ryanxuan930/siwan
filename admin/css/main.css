@@ -1,0 +1,58 @@
+body, html{
+	height: 100%;
+	font-family: 'Noto Sans TC', sans-serif;
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+}
+.bg-img {
+	background-image: url("../img/cover.jpg");
+	min-height: 100vh;
+	/* Center and scale the image nicely */
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.login{
+	color: white;
+	position: relative;
+	margin: auto;
+	max-width: 500px;
+	padding: 16px;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+}
+.login input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: rgba(255,255,255,0.1);
+}
+.login input[type=text]:focus{
+	background-color: rgba(255,255,255,0.05);
+	outline: none;
+}
+
+/* Set a style for the submit button */
+.login_btn {
+	background-color: orangered;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+
+.login_btn:hover {
+	opacity: 1;
+}
+@media screen and (max-width: 600px){
+	.login{
+		max-width: 95%;
+	}
+}

@@ -9,6 +9,7 @@
 </head>
 <body>
 	<div class="bg-img">
+		<div style="height: 100px;"></div>
   		<form action="/action_page.php" class="container">
     		<h1>Wellcome to SIWAN</h1>
 			<label for="id"><b>Studet ID</b></label>

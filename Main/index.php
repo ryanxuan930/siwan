@@ -11,10 +11,10 @@
 	<div class="bg-img">
 		<div style="height: 100px;"></div>
   		<form action="/action_page.php" class="container">
-    		<h1>歡迎來到西灣</h1>
+    		<h1> Wellcome to SIWAN！</h1>
 			<label for="id" style="color: gray">輸入你的學號，來開始未來之旅</label>
     		<input type="text" placeholder="Enter Your Student ID" name="id" required>
-			<button type="submit" class="btn">START!</button>
+			<button type="submit" class="btn">GO</button>
   		</form>
 	</div>
 </body>

@@ -11,7 +11,7 @@ body, html{
 	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
 	position: relative;
 }
 .container {

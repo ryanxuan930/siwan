@@ -31,6 +31,12 @@ function topNav(){
     	x.className = "topnav";
   	}
 }
+function homepage(){
+	currentPageNav(0);
+}
+function gamepage(){
+	currentPageNav(1);
+}
 </script>
 </body>
 </html>

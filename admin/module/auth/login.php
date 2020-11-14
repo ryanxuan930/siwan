@@ -9,8 +9,8 @@ $stmt->bind_param("ss", $account, $password);
 $stmt->execute();
 $result = $stmt->get_result();
 if($result->num_rows){
-	echo 'ok';
+	header('Location: ');
 }else{
-	echo 'no';
+	echo '<script>alert("帳號或密碼錯誤");</script>';
 }
 ?>

@@ -22,7 +22,7 @@ function currentPageNav(page){
 	var navChild = nav.getElementsByTagName("a")[page];
 	navChild.classList.add("active");
 }
-currentPageNav(2);
+currentPageNav(0);
 function topNav(){
 	var x = document.getElementById("navbar");
   	if(x.className === "topnav"){

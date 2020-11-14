@@ -10,13 +10,11 @@
 </head>
 <body>
 	<div class="topnav" id="navbar">
-  		<a href="#home" class="active">Home</a>
+  		<a href="#home" class="active">首頁</a>
   		<a href="#news">News</a>
   		<a href="#contact">Contact</a>
   		<a href="#about">About</a>
   		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
-    		<i class="fa fa-bars"></i>
-  		</a>
 	</div>
 <script>
 function topNav(){

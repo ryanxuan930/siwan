@@ -19,7 +19,7 @@
 <script>
 var currentPage = 0;
 var nav = document.getElementById("navbar");
-var navChild = nav.getElementsByTagName("a")[0];
+var navChild = nav.getElementsByTagName("a")[currentPage];
 navChild.classList.add("active");
 function topNav(){
 	var x = document.getElementById("navbar");

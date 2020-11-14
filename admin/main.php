@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="topnav" id="navbar">
-  		<a onClick="homepage()" class="active">首頁</a>
+  		<a onClick="homepage()">首頁</a>
   		<a onClick="gamepage()">遊戲後台</a>
   		<a href="#contact">Contact</a>
   		<a href="#about">About</a>
@@ -20,7 +20,7 @@
 var currentPage = 0;
 var nav = document.getElementById("navbar");
 var navChild = nav.getElementsByTagName("a")[0];
-navChild.addClass("active");
+navChild.classList.add("active");
 function topNav(){
 	var x = document.getElementById("navbar");
   	if(x.className === "topnav"){

@@ -27,7 +27,6 @@ function currentPageNav(page){
 	currentPage = page;
 	
 }
-currentPageNav(0);
 function topNav(){
 	var x = document.getElementById("navbar");
   	if(x.className === "topnav"){
@@ -42,6 +41,7 @@ function homepage(){
 function gamepage(){
 	currentPageNav(1);
 }
+currentPageNav(0);
 </script>
 </body>
 </html>

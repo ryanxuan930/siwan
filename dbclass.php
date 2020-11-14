@@ -1,8 +1,8 @@
 <?php
 class database extends mysqli{
 	private $server="127.0.0.1";
-	private $username="connect";
-	private $password="abcd12306566";
+	private $username="seiawan";
+	private $password="Siwan075252000";
 	private $db;
 	private $table;
 	public $conn;

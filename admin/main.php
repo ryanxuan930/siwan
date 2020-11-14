@@ -17,10 +17,15 @@
   		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 <script>
+var currentPage =0;
 function currentPageNav(page){
 	var nav = document.getElementById("navbar");
+	var navChild = nav.getElementsByTagName("a")[currentPage];
+	navChild.classList.remove("active");
 	var navChild = nav.getElementsByTagName("a")[page];
 	navChild.classList.add("active");
+	currentPage = page;
+	
 }
 currentPageNav(0);
 function topNav(){

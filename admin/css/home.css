@@ -21,12 +21,12 @@ body, html{
 }
 
 .topnav a:hover {
-  	background-color: darkorange;
-  	color: black;
+  	background-color: #F57C00;
+  	color: white;
 }
 
 .topnav a.active {
-  	background-color: orangered;
+  	background-color: #E65100;
   	color: white;
 }
 

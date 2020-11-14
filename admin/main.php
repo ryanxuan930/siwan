@@ -9,7 +9,7 @@
 <title>Seiawan</title>
 </head>
 <body>
-	<div class="topnav" id="topnav">
+	<div class="topnav" id="navbar">
   		<a href="#home" class="active">Home</a>
   		<a href="#news">News</a>
   		<a href="#contact">Contact</a>
@@ -20,7 +20,7 @@
 	</div>
 <script>
 function topNav(){
-	var x = document.getElementById("topnav");
+	var x = document.getElementById("navbar");
   	if(x.className === "topnav"){
     	x.className += " responsive";
   	}else{

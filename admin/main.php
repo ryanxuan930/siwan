@@ -14,7 +14,7 @@
   		<a href="#news">News</a>
   		<a href="#contact">Contact</a>
   		<a href="#about">About</a>
-  		<a href="javascript:void(0);" class="icon" onclick="topNav()">
+  		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
     		<i class="fa fa-bars"></i>
   		</a>
 	</div>

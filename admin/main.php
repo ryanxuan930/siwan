@@ -17,7 +17,7 @@
   		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 <script>
-var currentPage = 0;
+var currentPage = 1;
 var nav = document.getElementById("navbar");
 var navChild = nav.getElementsByTagName("a")[currentPage];
 navChild.classList.add("active");

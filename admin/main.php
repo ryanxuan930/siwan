@@ -17,10 +17,12 @@
   		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 <script>
-var currentPage = 1;
-var nav = document.getElementById("navbar");
-var navChild = nav.getElementsByTagName("a")[currentPage];
-navChild.classList.add("active");
+function currentPageNav(page){
+	var nav = document.getElementById("navbar");
+	var navChild = nav.getElementsByTagName("a")[page];
+	navChild.classList.add("active");
+}
+currentPageNav(2);
 function topNav(){
 	var x = document.getElementById("navbar");
   	if(x.className === "topnav"){

@@ -101,6 +101,9 @@ body, html{
 	border: 0;
 	padding: 0;
 }
+.box{
+	box-shadow: 2px 2px 5px gray;
+}
 @media screen and (max-width: 900px){
 	#container{
 		width: 95%;

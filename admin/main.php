@@ -75,8 +75,7 @@ function configpage(){
 	});
 }
 function logout(){
-	topNav();
-	$.post("module/auth/logout.php");
+	location.href = "module/auth/logout.php";
 }
 homepage();
 </script>

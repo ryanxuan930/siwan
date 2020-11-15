@@ -73,6 +73,10 @@ function configpage(){
 		$("#container").html(data);
 	});
 }
+function logout(){
+	topNav();
+	$.post("module/auth/logout.php");
+}
 homepage();
 </script>
 </body>

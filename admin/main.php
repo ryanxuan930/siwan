@@ -38,6 +38,7 @@ function topNav(){
 function homepage(){
 	currentPageNav(0);
 	topNav();
+	$.post("home/index.php");
 }
 function pointpage(){
 	currentPageNav(1);

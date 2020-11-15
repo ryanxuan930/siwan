@@ -52,6 +52,38 @@ body, html{
 .login_btn:hover {
 	opacity: 1;
 }
+.topnav {
+	overflow: hidden;
+  	background-color: #333;
+}
+.topnav a {
+  	float: left;
+  	display: block;
+  	color: #f2f2f2;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+	cursor: pointer;
+}
+
+.topnav a:hover {
+  	background-color: #F57C00;
+  	color: white;
+}
+
+.topnav a.active {
+  	background-color: #E65100;
+  	color: white;
+}
+
+.topnav .icon {
+  	display: none;
+}
+#name_block:hover{
+	background-color: #333;
+	color: #f2f2f2;
+}
 #container{
 	margin: 50px auto;
 	width: 900px;
@@ -78,4 +110,24 @@ body, html{
 	.login{
 		max-width: 95%;
 	}
+	.topnav a:not(:first-child){
+		display: none;
+	}
+  	.topnav a.icon{
+    	float: right;
+    	display: block;
+	}
+	.topnav.responsive{
+		position: relative;
+	}
+  	.topnav.responsive .icon{
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+  	}
+  	.topnav.responsive a{
+    	float: none;
+    	display: block;
+    	text-align: left;
+  	}
 }

@@ -1,6 +1,8 @@
 <?php
 session_start();
 unset($_SESSION["account"]);
-header("Location: ../../index.php");
-exit();
 ?>
+<script>
+	alert("已登出");
+	location.href="../../index.php"
+</script>

@@ -16,6 +16,7 @@
   		<a onClick="configpage()">系統設定</a>
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
+	<div class="container"></div>
 <script>
 var currentPage =0;
 function currentPageNav(page){
@@ -38,7 +39,9 @@ function topNav(){
 function homepage(){
 	currentPageNav(0);
 	topNav();
-	$.post("home/index.php");
+	$.post("home/index.php",{query: 1},function(data){
+		$.("#container").innerHTML;
+	});
 }
 function pointpage(){
 	currentPageNav(1);

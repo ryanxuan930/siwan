@@ -1,8 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['account'])){
-	echo '<script>alert("尚未登入");</script>';
-	header('Location: index.php');
+	echo '<script>alert("尚未登入"); location.href="index.php"</script>';
 	exit();
 }
 ?>

@@ -4,6 +4,23 @@ if(!isset($_SESSION['account'])){
 	echo '<script>alert("尚未登入"); location.href="index.php"</script>';
 	exit();
 }
+include('../dbclass.php');
+include('../database.php');
+$db = new database('seiawan');
+$db->table('admin');
+$account = $_SESSION['account'];
+$result = $db->select_where(0, 'account = "'.$account.'"');
+while($row = $result->fetch_row()){
+	$name = $row[2];
+	$permission = $row[3];
+}
+if($permission == 2){
+	$permi_display = "超級管理員";
+}else if($permission == 1){
+	$permi_display = "系統管理員";
+}else{
+	$permi_display = "一般管理員";
+}
 ?>
 <!doctype html>
 <html>

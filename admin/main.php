@@ -14,7 +14,7 @@
 		<a onClick="pointpage()">積點管理</a>
   		<a onClick="gamepage()">遊戲後台</a>
   		<a onClick="configpage()">系統設定</a>
-  		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
+  		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 <script>
 var currentPage =0;
@@ -37,15 +37,19 @@ function topNav(){
 }
 function homepage(){
 	currentPageNav(0);
+	topNav();
 }
 function pointpage(){
 	currentPageNav(1);
+	topNav();
 }
 function gamepage(){
 	currentPageNav(2);
+	topNav();
 }
 function configpage(){
 	currentPageNav(3);
+	topNav();
 }
 currentPageNav(0);
 </script>

@@ -40,7 +40,7 @@ function homepage(){
 	currentPageNav(0);
 	topNav();
 	$.post("home/index.php",{query: 1},function(data){
-		$.("#container").innerHTML;
+		$.("#container").html;
 	});
 }
 function pointpage(){

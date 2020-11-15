@@ -40,7 +40,7 @@ function topNav(){
 function homepage(){
 	currentPageNav(0);
 	topNav();
-	$.post("module/home/index.php",{query: 1},function (data){
+	$.post("module/home/index.php",function (data){
 		$("#container").html(data);
 	});
 }
@@ -56,7 +56,7 @@ function configpage(){
 	currentPageNav(3);
 	topNav();
 }
-currentPageNav(0);
+homepage();
 </script>
 </body>
 </html>

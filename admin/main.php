@@ -11,9 +11,9 @@
 <body>
 	<div class="topnav" id="navbar">
   		<a onClick="homepage()">首頁</a>
+		<a href="pointpage()">積點管理</a>
   		<a onClick="gamepage()">遊戲後台</a>
-  		<a href="#contact">Contact</a>
-  		<a href="#about">About</a>
+  		<a href="configpage()">系統設定</a>
   		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 <script>
@@ -38,8 +38,14 @@ function topNav(){
 function homepage(){
 	currentPageNav(0);
 }
-function gamepage(){
+function pointpage(){
 	currentPageNav(1);
+}
+function gamepage(){
+	currentPageNav(2);
+}
+function configpage(){
+	currentPageNav(3);
 }
 currentPageNav(0);
 </script>

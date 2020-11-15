@@ -46,7 +46,7 @@ if($permission == 2){
 	<div id="container"></div>
 	<div class="footer">
   		<p>© 2020 A Company in Siwan College</p>
-  		<p>Powered by Rikujo framework from ryanxuan930</p>
+  		<p>Powered by Rikujo from ryanxuan930</p>
 	</div>
 <script>
 var currentPage =0;

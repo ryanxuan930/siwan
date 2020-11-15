@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!$_SESSION['account']){
+if(!isset($_SESSION['account'])){
 	echo '<script>alert("尚未登入");</script>';
 	exit();
 }

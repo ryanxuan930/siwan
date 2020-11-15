@@ -17,7 +17,7 @@
   		<a onClick="configpage()">系統設定</a>
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
-	<div class="container"></div>
+	<div id="container"></div>
 <script>
 var currentPage =0;
 function currentPageNav(page){

@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(!$_SESSION['account']){
+	echo '<script>alert("尚未登入");</script>';
+	exit();
+}
 ?>
 <!doctype html>
 <html>
@@ -18,6 +22,7 @@ session_start();
 		<a onClick="pointpage()">積點管理</a>
   		<a onClick="gamepage()">遊戲後台</a>
   		<a onClick="configpage()">系統設定</a>
+  		<a onClick="logout()">登出</a>
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 	<div id="container"></div>

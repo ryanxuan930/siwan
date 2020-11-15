@@ -53,12 +53,11 @@ body, html{
 	opacity: 1;
 }
 #container{
-	margin: auto;
+	margin: 50px; auto;
 	width: 900px;
 }
 @media screen and (max-width: 900px){
 	#container{
-		margin: auto;
 		width: 95%;
 	}
 }

@@ -18,6 +18,7 @@ if(!isset($_SESSION['account'])){
 </head>
 <body>
 	<div class="topnav" id="navbar">
+  		<a disabled>名字</a>
   		<a onClick="homepage()">首頁</a>
 		<a onClick="pointpage()">積點管理</a>
   		<a onClick="gamepage()">遊戲後台</a>
@@ -46,28 +47,28 @@ function topNav(){
   	}
 }
 function homepage(){
-	currentPageNav(0);
+	currentPageNav(1);
 	topNav();
 	$.post("module/home/index.php",function (data){
 		$("#container").html(data);
 	});
 }
 function pointpage(){
-	currentPageNav(1);
+	currentPageNav(2);
 	topNav();
 	$.post("module/point/index.php",function (data){
 		$("#container").html(data);
 	});
 }
 function gamepage(){
-	currentPageNav(2);
+	currentPageNav(3);
 	topNav();
 	$.post("module/game/index.php",function (data){
 		$("#container").html(data);
 	});
 }
 function configpage(){
-	currentPageNav(3);
+	currentPageNav(4);
 	topNav();
 	$.post("module/config/index.php",function (data){
 		$("#container").html(data);

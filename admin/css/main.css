@@ -39,7 +39,7 @@ body, html{
 
 /* Set a style for the submit button */
 .login_btn {
-	background-color: orangered;
+	background-color: #E65100;
 	color: white;
 	padding: 16px 20px;
 	border: none;
@@ -55,6 +55,15 @@ body, html{
 #container{
 	margin: 50px auto;
 	width: 900px;
+}
+.footer {
+  	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: #E65100;
+  	color: white;
+  	text-align: center;
 }
 @media screen and (max-width: 900px){
 	#container{

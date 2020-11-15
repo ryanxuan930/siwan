@@ -9,6 +9,8 @@ $stmt->bind_param("ss", $account, $password);
 $stmt->execute();
 $result = $stmt->get_result();
 if($result->num_rows){
+	session_start();
+	$_SESSION['account'] = $account;
 	header('Location: ../../main.php');
 	exit();
 }else{

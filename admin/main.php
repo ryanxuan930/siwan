@@ -11,9 +11,9 @@
 <body>
 	<div class="topnav" id="navbar">
   		<a onClick="homepage()">首頁</a>
-		<a href="pointpage()">積點管理</a>
+		<a onClick="pointpage()">積點管理</a>
   		<a onClick="gamepage()">遊戲後台</a>
-  		<a href="configpage()">系統設定</a>
+  		<a onClick="configpage()">系統設定</a>
   		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 <script>

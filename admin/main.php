@@ -16,22 +16,22 @@ while($row = $result->fetch_row()){
 }
 switch($permission){
 	case 1:
-		$permi_display = "企劃部　　　";
+		$permi_display = "[企劃部]　　　";
 		break;
 	case 2:
-		$permi_display = "行銷部　　　";
+		$permi_display = "[行銷部]　　　";
 		break;
 	case 3:
-		$permi_display = "使用者體驗部";
+		$permi_display = "[使用者體驗部]";
 		break;
 	case 4:
-		$permi_display = "科技部　　　";
+		$permi_display = "[科技部]　　　";
 		break;
 	case 5:
-		$permi_display = "系統管理員　";
+		$permi_display = "[系統管理員]　";
 		break;
 	case 6:
-		$permi_display = "超級管理員　";
+		$permi_display = "[超級管理員]　";
 		break;
 }
 ?>

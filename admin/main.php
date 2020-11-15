@@ -47,14 +47,23 @@ function homepage(){
 function pointpage(){
 	currentPageNav(1);
 	topNav();
+	$.post("module/point/index.php",function (data){
+		$("#container").html(data);
+	});
 }
 function gamepage(){
 	currentPageNav(2);
 	topNav();
+	$.post("module/game/index.php",function (data){
+		$("#container").html(data);
+	});
 }
 function configpage(){
 	currentPageNav(3);
 	topNav();
+	$.post("module/config/index.php",function (data){
+		$("#container").html(data);
+	});
 }
 homepage();
 </script>

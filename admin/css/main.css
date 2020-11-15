@@ -52,6 +52,14 @@ body, html{
 .login_btn:hover {
 	opacity: 1;
 }
+#container{
+	width: 900px;
+}
+@media screen and (max-width: 900px){
+	#container{
+		width: 95%;
+	}
+}
 @media screen and (max-width: 600px){
 	.login{
 		max-width: 95%;

@@ -35,7 +35,7 @@ if($permission == 2){
 </head>
 <body>
 	<div class="topnav" id="navbar">
-  		<a id="name_block" disabled>名字</a>
+  		<a id="name_block" disabled><?php echo $name.' '.$permi_display; ?></a>
   		<a onClick="homepage()">首頁</a>
 		<a onClick="pointpage()">積點管理</a>
   		<a onClick="gamepage()">遊戲後台</a>

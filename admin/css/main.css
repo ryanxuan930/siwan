@@ -102,7 +102,7 @@ body, html{
 	padding: 0;
 }
 .box{
-	box-shadow: 5px 5px 5px #424242;
+	box-shadow: 5px 5px 5px #BDBDBD;
 }
 @media screen and (max-width: 900px){
 	#container{

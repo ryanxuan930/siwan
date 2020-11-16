@@ -51,7 +51,6 @@ switch($permission){
   		<a id="name_block" disabled><?php echo $name.' '.$permi_display; ?></a>
   		<a onClick="homepage()">首頁</a>
 		<a onClick="pointpage()">積點管理</a>
-  		<a onClick="gamepage()">遊戲後台</a>
   		<a onClick="configpage()">系統設定</a>
   		<a onClick="logout()">登出</a>
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
@@ -94,15 +93,8 @@ function pointpage(){
 		$("#container").html(data);
 	});
 }
-function gamepage(){
-	currentPageNav(3);
-	topNav();
-	$.post("module/game/index.php",function (data){
-		$("#container").html(data);
-	});
-}
 function configpage(){
-	currentPageNav(4);
+	currentPageNav(3);
 	topNav();
 	$.post("module/config/index.php",function (data){
 		$("#container").html(data);

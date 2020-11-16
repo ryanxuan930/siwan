@@ -8,7 +8,7 @@ body, html{
 	box-sizing: border-box;
 }
 hr{
-	border: 2px #BDBDBD solid;
+	border: 1px #BDBDBD solid;
 }
 .bg-img {
 	background-image: url("../../main/img/cover.jpg");

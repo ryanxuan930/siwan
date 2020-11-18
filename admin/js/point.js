@@ -12,4 +12,17 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$("#pass_button").on("click",function(){
+		$.ajax({
+			type: "POST",
+			url: "module/point/pass.php" ,
+			data: $("#section").serialize(),
+			success: function(result){
+				alert(result);
+			},
+			error: function(){
+				alert("連線錯誤");
+			}
+		});
+	});
 });	

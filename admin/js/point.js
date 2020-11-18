@@ -2,7 +2,7 @@ $("#section_select").on("change",function(){
 	$.ajax({
 		type: "POST",
 		url: "../module/point/section.php" ,
-		data: $("#section_select").serialize(),
+		data: $("#section").serialize(),
 		success: function(result){
 			alert(result);
 		},

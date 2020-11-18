@@ -28,5 +28,5 @@ switch($section){
 }
 $db = new database('seiawan');
 $db->table('admin');
-$db->update('section="'.$section.'"', 'stu_id="'.$account.'"');
+$db->update('section="'.$section.'"', 'account="'.$account.'"');
 ?>

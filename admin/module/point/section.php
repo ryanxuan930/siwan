@@ -1,5 +1,6 @@
 <?php
 include('../../../dbclass.php');
+session_start();
 $account = $_SESSION['account'];
 $section = $_POST['section'];
 echo '關卡設定為：';

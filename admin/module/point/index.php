@@ -3,7 +3,7 @@ echo '<div class="console box">';
 echo '<h2>關卡選擇</h2>';
 echo '<hr>';
 echo '<form id="section">';
-echo '<select name="section" id="section_select" style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;>';
+echo '<select name="section" id="section_select" style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;">';
 echo '<option value="1">舒壓植物園</option>';
 echo '<option value="2">打開新世界</option>';
 echo '<option value="3">趨勢聯想</option>';

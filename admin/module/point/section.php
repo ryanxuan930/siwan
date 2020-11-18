@@ -1,4 +1,6 @@
 <?php
+include('../../../dbclass.php');
+$account = $_SESSION['account'];
 $section = $_POST['section'];
 echo '關卡設定為：';
 switch($section){
@@ -21,4 +23,7 @@ switch($section){
 		echo '聽力輔助';
 		break;
 }
+$db = new database('seiawan');
+$db->table('admin');
+$db->update('section="'.$section.'"', 'stu_id="'.$account.'"');
 ?>

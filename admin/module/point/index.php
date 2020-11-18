@@ -12,6 +12,7 @@ echo '<option value="5">摩斯密碼</option>';
 echo '<option value="6">聽力輔助</option>';
 echo '</select>';
 echo '</form>';
+echo '<script src="js/point.js"></script>';
 echo '</div>';
 echo '<div class="console box">';
 echo '<h2>通關認證</h2>';

@@ -1,15 +1,14 @@
 $(document).ready(function(){
 	$("#section_select").on("change",function(){
-		alert("change");
 		$.ajax({
 			type: "POST",
 			url: "module/point/section.php" ,
 			data: $("#section").serialize(),
-			success: function(){
-				alert("ok");
+			success: function(result){
+				alert(result);
 			},
 			error: function(){
-				alert("error");
+				alert("連線錯誤");
 			}
 		});
 	});

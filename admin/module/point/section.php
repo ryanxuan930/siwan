@@ -3,7 +3,9 @@ include('../../../dbclass.php');
 session_start();
 $account = $_SESSION['account'];
 $section = $_POST['section'];
-echo '關卡設定為：';
+echo '關主';
+echo $account;
+echo '的關卡設定為：';
 switch($section){
 	case 1:
 		echo '舒壓植物園';

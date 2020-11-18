@@ -11,7 +11,6 @@ echo '<h2>人流動態</h2>';
 echo '<hr>';
 echo '<table style="width:100%;">';
 echo '<tr><td>更新時間：</td><td>2020-12-21 12:00:00</td></tr>';
-echo '<tr><td>靜態展區：</td><td>4人</td></tr>';
 echo '<tr><td>舒壓植物園：</td><td>4人</td></tr>';
 echo '<tr><td>打開新世界：</td><td>4人</td></tr>';
 echo '<tr><td>趨勢聯想：</td><td>4人</td></tr>';

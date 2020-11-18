@@ -105,8 +105,8 @@ function logout(){
 	location.href = "module/auth/logout.php";
 }
 $(document).ready(function(){
-	alert("change");
 	$("#section_select").on("change",function(){
+		alert("change");
 		$.ajax({
 			type: "POST",
 			url: "module/point/section.php" ,

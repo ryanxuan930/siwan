@@ -1,3 +1,4 @@
 <?php
-echo 'ok';
+$section = $_POST['section'];
+echo $section;
 ?>

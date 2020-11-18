@@ -105,13 +105,14 @@ function logout(){
 	location.href = "module/auth/logout.php";
 }
 $(document).ready(function(){
+	alert("change");
 	$("#section_select").on("change",function(){
 		$.ajax({
 			type: "POST",
 			url: "module/point/section.php" ,
 			data: $("#section").serialize(),
 			success: function(result){
-				alert(result);
+				alert("ok");
 			},
 			error: function(){
 				alert("error");

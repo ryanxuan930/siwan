@@ -2,8 +2,8 @@
 echo '<div class="console box">';
 echo '<h2>關卡選擇</h2>';
 echo '<hr>';
-echo '<form id="section_select">';
-echo '<select name="section">';
+echo '<form id="section">';
+echo '<select name="section" id="section_select">';
 echo '<option value="1">舒壓植物園</option>';
 echo '<option value="2">打開新世界</option>';
 echo '<option value="3">趨勢聯想</option>';

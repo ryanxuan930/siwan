@@ -1,5 +1,6 @@
 <?php
 $section = $_POST['section'];
+echo '關卡設定為：';
 switch($section){
 	case 1:
 		echo '舒壓植物園';

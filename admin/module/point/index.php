@@ -1,4 +1,25 @@
 <?php
+echo '
+<script src="js/reader/js/webcam.min.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/grid.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/version.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/detector.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/formatinf.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/errorlevel.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/bitmat.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/datablock.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/bmparser.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/datamask.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/rsdecoder.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/gf256poly.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/gf256.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/decoder.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/qrcode.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/findpat.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/alignpat.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/databr.js"></script>
+<script src="js/reader/js/effects.js"></script>
+';
 echo '<div class="console box">';
 echo '<h2>關卡選擇</h2>';
 echo '<hr>';

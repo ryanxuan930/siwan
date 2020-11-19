@@ -42,8 +42,26 @@ switch($permission){
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/home.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<script type="text/javascript" src="js/instascan.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/webcam.min.js"></script>
+<script type="text/javascript" src="js/qr/grid.js"></script>
+<script type="text/javascript" src="js/qr/version.js"></script>
+<script type="text/javascript" src="js/qr/detector.js"></script>
+<script type="text/javascript" src="js/qr/formatinf.js"></script>
+<script type="text/javascript" src="js/qr/errorlevel.js"></script>
+<script type="text/javascript" src="js/qr/bitmat.js"></script>
+<script type="text/javascript" src="js/qr/datablock.js"></script>
+<script type="text/javascript" src="js/qr/bmparser.js"></script>
+<script type="text/javascript" src="js/qr/datamask.js"></script>
+<script type="text/javascript" src="js/qr/rsdecoder.js"></script>
+<script type="text/javascript" src="js/qr/gf256poly.js"></script>
+<script type="text/javascript" src="js/qr/gf256.js"></script>
+<script type="text/javascript" src="js/qr/decoder.js"></script>
+<script type="text/javascript" src="js/qr/qrcode.js"></script>
+<script type="text/javascript" src="js/qr/findpat.js"></script>
+<script type="text/javascript" src="js/qr/alignpat.js"></script>
+<script type="text/javascript" src="js/qr/databr.js"></script>
+<script src="js/effects.js"></script>
 <title>Seiawan</title>
 </head>
 <body>
@@ -56,22 +74,13 @@ switch($permission){
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 	<div id="container"></div>
-	<video id="preview"></video>
-    <script>
-      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-      scanner.addListener('scan', function (content) {
-        console.log(content);
-      });
-      Instascan.Camera.getCameras().then(function (cameras) {
-        if (cameras.length > 0) {
-          scanner.start(cameras[0]);
-        } else {
-          console.error('No cameras found.');
-        }
-      }).catch(function (e) {
-        console.error(e);
-      });
-    </script>
+	<div id="display_box" style="width:320px; height:240px;"></div>
+	<div class="button">
+		<a id="button">Scan QR code</a>
+	</div>
+	<div>
+		<div id="qrContent"><p>Result will be here.</p></div>
+	</div>
 	<div class="footer">
   		<p>© 2020 A Company in Siwan College</p>
   		<p>Powered by Rikujo from Ryan P.H. Chang</p>

@@ -18,10 +18,12 @@ while($row = $result->fetch_row()){
 	$sum = $sec1+$sec2+$sec3+$sec4+$sec5+$sec6;
 }
 echo '<script type="text/javascript" src="js/generator/jquery.qrcode.min.js"></script>';
+echo '<h3>SIWAN PASS</h3>'
 echo '<div id="qrcode"></div>';
 echo '<hr>';
-echo '<div class="participant">'.$id.'</div>';
+echo '<div class="participant">['.$id.']</div>';
 echo '<div class="participant">'.$name.'</div>';
+echo '<div class="participant">FROM: Siwan (SWN) TO: Future (FTR)</div>';
 echo '
 <script>
 $("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});

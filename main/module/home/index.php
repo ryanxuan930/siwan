@@ -21,7 +21,8 @@ echo '<script type="text/javascript" src="js/generator/jquery.qrcode.min.js"></s
 echo '<h2 style="color: #424242">SIWAN PASS</h2>';
 echo '<div id="qrcode"></div>';
 echo '<hr>';
-echo '<div class="participant">['.$id.'] '.$name.'</div>';
+echo '<div class="participant">['.$id.']</div>';
+echo '<div class="participant">'.strtoupper($name).'</div>';
 echo '<div style="color: #424242;">FROM: Siwan (SWN)</div>';
 echo '<div style="color: #424242;">TO: Future (FTR)</div>';
 echo '

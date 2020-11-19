@@ -14,6 +14,7 @@
 		<div class="container_box">
 			<div class="container"></div>
 		</div>
+		<div style="height: 50px;"></div>
 		<div class="footer">
   		<p>© 2020 A Company in Siwan College</p>
   		<p>Powered by Rikujo from Ryan P.H. Chang</p>

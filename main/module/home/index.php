@@ -23,7 +23,7 @@ echo '<div id="qrcode"></div>';
 echo '<hr>';
 echo '<div class="participant">['.$id.']</div>';
 echo '<div class="participant">'.$name.'</div>';
-echo '<div class="participant">FROM: Siwan (SWN) TO: Future (FTR)</div>';
+echo '<div style="text-align:center; color: #424242;">FROM: Siwan (SWN) TO: Future (FTR)</div>';
 echo '
 <script>
 $("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});

@@ -23,7 +23,7 @@ function qrCodeDecoder(dataUrl) {
 
 // show info from qr code
 function showInfo(data) {
-	if(data == 'error decoding QR Code'){
+	if(data == "error decoding QR Code"){
 		alert('掃描失敗');
 	}else{
 		alert('學號'+data+'成功過關');

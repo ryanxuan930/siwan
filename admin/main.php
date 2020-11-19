@@ -44,24 +44,24 @@ switch($permission){
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/webcam.min.js"></script>
-<script type="text/javascript" src="js/qr/grid.js"></script>
-<script type="text/javascript" src="js/qr/version.js"></script>
-<script type="text/javascript" src="js/qr/detector.js"></script>
-<script type="text/javascript" src="js/qr/formatinf.js"></script>
-<script type="text/javascript" src="js/qr/errorlevel.js"></script>
-<script type="text/javascript" src="js/qr/bitmat.js"></script>
-<script type="text/javascript" src="js/qr/datablock.js"></script>
-<script type="text/javascript" src="js/qr/bmparser.js"></script>
-<script type="text/javascript" src="js/qr/datamask.js"></script>
-<script type="text/javascript" src="js/qr/rsdecoder.js"></script>
-<script type="text/javascript" src="js/qr/gf256poly.js"></script>
-<script type="text/javascript" src="js/qr/gf256.js"></script>
-<script type="text/javascript" src="js/qr/decoder.js"></script>
-<script type="text/javascript" src="js/qr/qrcode.js"></script>
-<script type="text/javascript" src="js/qr/findpat.js"></script>
-<script type="text/javascript" src="js/qr/alignpat.js"></script>
-<script type="text/javascript" src="js/qr/databr.js"></script>
-<script src="js/effects.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/grid.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/version.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/detector.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/formatinf.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/errorlevel.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/bitmat.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/datablock.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/bmparser.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/datamask.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/rsdecoder.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/gf256poly.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/gf256.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/decoder.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/qrcode.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/findpat.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/alignpat.js"></script>
+<script type="text/javascript" src="js/reader/js/qr/databr.js"></script>
+<script src="js/reader/js/effects.js"></script>
 <title>Seiawan</title>
 </head>
 <body>

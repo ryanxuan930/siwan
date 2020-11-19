@@ -1,0 +1,13 @@
+.container_box{
+	color: white;
+	margin: 50px auto;
+	max-width: 600px;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+}
+@media screen and (max-width: 600px){
+	.container_box{
+		max-width: 95%;
+	}
+}

@@ -11,6 +11,9 @@
 	width: 256px;
 	margin: auto;
 }
+hr{
+	border: 1px #424242 solid;
+}
 .participant{
 	font-size: 24px;
 	color: #424242;

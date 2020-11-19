@@ -55,6 +55,7 @@ switch($permission){
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 	<div id="container"></div>
+	<div style="height: 30px;"></div>
 	<div class="footer">
   		<p>© 2020 A Company in Siwan College</p>
   		<p>Powered by Rikujo from Ryan P.H. Chang</p>

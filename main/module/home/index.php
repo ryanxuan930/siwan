@@ -19,6 +19,9 @@ while($row = $result->fetch_row()){
 }
 echo '<script type="text/javascript" src="js/generator/jquery.qrcode.min.js"></script>';
 echo '<div id="qrcode"></div>';
+echo '<hr>';
+echo '<div style="text-align:center;">'.$id.'</div>';
+echo '<div style="text-align:center;">'.$name.'</div>';
 echo '
 <script>
 $("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});

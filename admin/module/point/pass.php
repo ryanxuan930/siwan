@@ -39,6 +39,6 @@ $db->update($sec.'=1','stu_id="'.$stu_id.'"');
 if($db->error()){
 	echo $db->error();
 }else{
-	echo 
+	echo $stu_id.'通過'.$data.'關卡';
 }
 ?>

@@ -20,6 +20,13 @@ echo '
 <script type="text/javascript" src="js/reader/js/qr/alignpat.js"></script>
 <script type="text/javascript" src="js/reader/js/qr/databr.js"></script>
 <script src="js/reader/js/effects.js"></script>
+<script>
+function query(input){
+	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
+		alert(e);
+	});
+}
+</script>
 ';
 echo '<div class="console box">';
 echo '<h2>關卡選擇</h2>';
@@ -48,13 +55,4 @@ echo '
 <button id="scan" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">掃描QR Code</button>
 ';
 echo '</div>';
-echo '
-<script>
-function query(input){
-	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
-		alert(e);
-	});
-}
-</script>
-';
 ?>

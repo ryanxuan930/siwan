@@ -26,6 +26,6 @@ function showInfo(data) {
 	if(data=="error decoding QR Code"){
 		alert("讀取失敗");
 	}else{
-		alert(data."成功通關");
+		alert(data+"成功通關");
 	}
 }

@@ -103,6 +103,7 @@ function configpage(){
 function logout(){
 	location.href = "module/auth/logout.php";
 }
+
 //ini
 homepage();
 topNav();

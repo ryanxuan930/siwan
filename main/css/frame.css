@@ -1,7 +1,8 @@
 .container_box{
 	color: white;
 	margin: auto;
-	max-width: 600px;
+	width: 600px;
+	min-height: 80vh;
 	padding: 20px;
 	background-color: rgba(0,0,0,0.6);
 	border-radius: 10px;

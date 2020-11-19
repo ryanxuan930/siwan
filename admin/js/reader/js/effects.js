@@ -20,11 +20,12 @@ function take_snapshot() {
 function qrCodeDecoder(dataUrl) {
 	qrcode.decode(dataUrl);
 }
+
 // show info from qr code
 function showInfo(data) {
-	if(data == "error decoding QR Code"){
-		alert('掃描失敗');
+	if(data=="error decoding QR Code"){
+		alert("讀取失敗");
 	}else{
-		alert(data.'完成關卡');
-		query(data);
+		alert(data."成功通關");
 	}
+}

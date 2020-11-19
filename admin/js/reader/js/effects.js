@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 	Webcam.attach('#scan_display');
 
-	$('#button').click(function () {
+	$('#scan').click(function () {
 		take_snapshot();
 	});
 

@@ -44,7 +44,7 @@ echo '<button id="pass_button" style="color:white;background-color: #E65100;widt
 echo '</form>';
 echo '
 <div id="scan_display"></div>
-<a id="button">Scan QR code</a>
+<button id="scan">掃描QR Code</button>
 <div id="qrContent"><p>Result will be here.</p></div>
 ';
 echo '</div>';

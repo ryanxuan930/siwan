@@ -27,5 +27,6 @@ function showInfo(data) {
 		alert("讀取失敗");
 	}else{
 		alert(data+"成功通關");
+		query(data);
 	}
 }

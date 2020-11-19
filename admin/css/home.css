@@ -20,6 +20,6 @@ body, html{
 @media screen and (max-width: 600px){
 	#scan_display{
 		width: 100%;
-		height: 75%;
+		height: 50%;
 	}	
 }

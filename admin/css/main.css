@@ -137,4 +137,7 @@ hr{
     	display: block;
     	text-align: left;
   	}
+	.footer p{
+		font-size: 8pt;
+	}
 }

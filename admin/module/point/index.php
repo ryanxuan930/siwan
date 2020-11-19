@@ -51,7 +51,7 @@ echo '</div>';
 echo '
 <script>
 function query(input){
-	$.post("module/point/pass.php",{id: input, host: '.$_SESSION['account'].'},function(e){
+	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
 		alert(e);
 	});
 }

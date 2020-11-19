@@ -21,7 +21,7 @@ echo '<script type="text/javascript" src="js/generator/jquery.qrcode.min.js"></s
 echo '<div id="qrcode"></div>';
 echo '
 <script>
-$("#qrcode").qrcode({width: 512,height: 512,text: "'.$id.'"});
+$("#qrcode").qrcode({width: 128,height: 128,text: "'.$id.'"});
 </script>
 ';
 ?>

@@ -2,7 +2,8 @@
 session_start();
 $id = $_SESSION['id'];
 include('../../../dbclass.php');
-$db = new database('participant');
+$db = new database('seiawan');
+$db->table('participant');
 $result = $db->select_where(0,'stu_id="'.$id.'"');
 while($row = $result->fetch_row()){
 	$name = $row[1];

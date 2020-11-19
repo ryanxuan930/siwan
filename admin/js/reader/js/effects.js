@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	Webcam.attach('#example');
+	Webcam.attach('#scan_display');
 
 	$('#button').click(function () {
 		take_snapshot();

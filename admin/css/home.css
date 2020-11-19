@@ -14,9 +14,12 @@ body, html{
 }
 #scan_display{
 	margin: auto;
-	width: 100%;
-	height: 75%;
+	width: 400px;
+	height: 300px;
 }
 @media screen and (max-width: 600px){
-	
+	#scan_display{
+		width: 100%;
+		height: 75%;
+	}	
 }

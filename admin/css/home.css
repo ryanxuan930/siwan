@@ -12,6 +12,10 @@ body, html{
 	margin: 5px 0;
 	padding: 0;
 }
+#scan_display{
+	margin: auto;
+	padding-top: 75%;
+}
 @media screen and (max-width: 600px){
 	
 }

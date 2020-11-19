@@ -29,22 +29,6 @@ echo '
 <script type="text/javascript" src="js/reader/js/qr/alignpat.js"></script>
 <script type="text/javascript" src="js/reader/js/qr/databr.js"></script>
 <script src="js/reader/js/effects.js"></script>
-<script>
-function query(input){
-	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
-		alert(e);
-	});
-}
-$(document).ready(function(){
-	$("#pass_button").click(function(){
-		var input = $("#pass").val();
-		console.log(input);
-		//$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
-			//alert(e);
-		//});
-	});
-});
-</script>
 ';
 echo '<div class="console box">';
 echo '<h2>關卡選擇</h2>';

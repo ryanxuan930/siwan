@@ -23,7 +23,7 @@
 	</div>
 <script>
 function fetch(){
-	$.post("module/home/index.php",{},function(){
+	$.post("module/home/index.php",{query: 1},function(){
 		$("#container").html();
 	});
 }

@@ -50,12 +50,11 @@ echo '
 echo '</div>';
 echo '
 <script>
-function query(){
-	$.post("module/point/pass.php",{id: pass, host: '.$_SESSION['account'].'},function(e){
+function query(input){
+	$.post("module/point/pass.php",{id: input, host: '.$_SESSION['account'].'},function(e){
 		alert(e);
 	});
 }
-
 </script>
 ';
 ?>

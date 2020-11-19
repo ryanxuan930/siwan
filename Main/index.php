@@ -13,10 +13,10 @@
   		<form action="/action_page.php" class="login">
     		<h1> Wellcome to SIWAN！</h1>
 			<div>
-				<label for="id" style="color: lightgray">輸入你的學號，來開始未來之旅</label>
+				<label for="id" style="color: lightgray">Enter your student ID to start the journey to the future.</label>
 			</div>
 			<div>
-				<label for="id" style="color: lightgray">Enter your student ID to start the journey to the future.</label>
+				<label for="id" style="color: lightgray">輸入你的學號，來開始未來之旅</label>
 			</div>
     		<input type="text" placeholder="Enter Your Student ID" name="id" required>
 			<button type="submit" class="btn">GO</button>

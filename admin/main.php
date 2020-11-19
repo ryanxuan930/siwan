@@ -43,6 +43,7 @@ switch($permission){
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/home.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script type="text/javascript" src="js/instascan.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <title>Seiawan</title>
 </head>

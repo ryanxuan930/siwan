@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="bg-img">
-		<div style="height: 100px;"></div>
+		<div style="height: 50px;"></div>
 		<div class="container_box">
 		</div>
 	</div>

@@ -74,22 +74,6 @@ switch($permission){
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 	<div id="container"></div>
-	<div class="pageWrapper">
-
-	<div class="boxWrapper">
-		<div id="example" style="width:320px; height:240px;"></div>
-	</div>
-
-	<div class="button">
-		<a id="button">Scan QR code</a>
-	</div>
-
-	<div class="boxWrapper auto">
-		<div id="hiddenImg"></div>
-		<div id="qrContent"><p>Result will be here.</p></div>
-	</div>
-
-</div>
 	<div class="footer">
   		<p>© 2020 A Company in Siwan College</p>
   		<p>Powered by Rikujo from Ryan P.H. Chang</p>

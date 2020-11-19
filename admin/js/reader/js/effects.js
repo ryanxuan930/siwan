@@ -23,5 +23,6 @@ function qrCodeDecoder(dataUrl) {
 
 // show info from qr code
 function showInfo(data) {
-	$("#qrContent p").text(data);
+	
+	alert('學號'+data+'成功過關');
 }

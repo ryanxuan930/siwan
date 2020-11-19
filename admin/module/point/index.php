@@ -45,7 +45,6 @@ echo '</form>';
 echo '
 <div id="scan_display"></div>
 <button id="scan" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">掃描QR Code</button>
-<div id="qrContent"><p>Result will be here.</p></div>
 ';
 echo '</div>';
 ?>

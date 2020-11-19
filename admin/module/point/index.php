@@ -39,6 +39,7 @@ function fetch(input){
 	var input = $("#pass").val();
 	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
 		alert(e);
+		$("#pass").val("");
 	});
 }
 </script>

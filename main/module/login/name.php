@@ -1,5 +1,4 @@
 <?php
-include("../../../database.php");
 include("../../../dbclass.php");
 session_start();
 $name = $_POST['name'];

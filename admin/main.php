@@ -57,6 +57,22 @@ switch($permission){
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>
 	<div id="container"></div>
+	<video id="preview"></video>
+    <script>
+      let scanner = new Instascan.Scanner({ video: document.getElementById(\'preview\') });
+      scanner.addListener(\'scan\', function (content) {
+        console.log(content);
+      });
+      Instascan.Camera.getCameras().then(function (cameras) {
+        if (cameras.length > 0) {
+          scanner.start(cameras[0]);
+        } else {
+          console.error(\'No cameras found.\');
+        }
+      }).catch(function (e) {
+        console.error(e);
+      });
+    </script>
 	<div class="footer">
   		<p>© 2020 A Company in Siwan College</p>
   		<p>Powered by Rikujo from Ryan P.H. Chang</p>

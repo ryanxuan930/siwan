@@ -10,7 +10,7 @@
 <body>
 	<div class="bg-img">
 		<div style="height: 100px;"></div>
-  		<form action="/action_page.php" class="login">
+  		<form action="module/login/login.php" method="post" class="login">
     		<h1> Wellcome to SIWAN！</h1>
 			<div>
 				<label for="id" style="color: lightgray">Enter your student ID to start the journey to the future.</label>

@@ -32,7 +32,5 @@ $db->table('participant');
 $db->update($sec.'=1','stu_id="'.$stu_id.'"');
 if($db->error()){
 	echo $db->error();
-}else{
-	echo 'ok';
 }
 ?>

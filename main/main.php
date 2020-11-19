@@ -24,7 +24,7 @@
 <script>
 function fetch(){
 	$.post("module/home/index.php",{query: 1},function(data){
-		$("#container").html(data);
+		$("#container").html();
 	});
 }
 fetch();

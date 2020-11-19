@@ -52,8 +52,24 @@ body, html{
 .btn:hover {
 	opacity: 1;
 }
+.footer {
+  	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: #333;
+  	color: white;
+  	text-align: center;
+}.footer p{
+	margin: 5px 0;
+	border: 0;
+	padding: 0;
+}
 @media screen and (max-width: 600px){
 	.login{
 		max-width: 95%;
+	}
+	.footer p{
+		font-size: 8pt;
 	}
 }

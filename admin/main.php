@@ -58,7 +58,7 @@ switch($permission){
 	<div id="container"></div>
 	<div class="footer">
   		<p>© 2020 A Company in Siwan College</p>
-  		<p>Powered by Rikujo from ryanxuan930</p>
+  		<p>Powered by Rikujo from Ryan P.H. Chang</p>
 	</div>
 <script>
 var currentPage =0;

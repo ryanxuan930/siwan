@@ -8,9 +8,10 @@ $db = new database('seiawan');
 $db->table('participant');
 $result = $db->select_where(0,'stu_id="'.$id.'"');
 if($result->num_rows){
-	echo '<script>alert("歡迎回來！Wellcome back!")</script>';
-	header('Location: ../../main.php');
-	exit();
+	echo '<script>
+	alert("歡迎回來！Wellcome back!");
+	location.href="../../main.php";
+	</script>';
 }else{
 	$db->insert('stu_id,name,sec1,sec2,sec3,sec4,sec5,sec6,current,present','"'.$id.'",0,0,0,0,0,0,0,0,0');
 }

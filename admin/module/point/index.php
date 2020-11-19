@@ -1,5 +1,14 @@
 <?php
 session_start();
+include('../../../dbclass.php');
+$db = new database('seiawan');
+$db->table('admin');
+$result = $db->select_where(0,'account="'.$_SESSION['account'].'"');
+$array = array('','','','','','','');
+while($row = $result->fetch_row()){
+	$section = $row[4];
+	$array[$section]='selected';
+}
 echo '
 <script src="js/reader/js/webcam.min.js"></script>
 <script type="text/javascript" src="js/reader/js/qr/grid.js"></script>
@@ -33,12 +42,12 @@ echo '<h2>關卡選擇</h2>';
 echo '<hr>';
 echo '<form id="section">';
 echo '<select name="section" id="section_select" style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;">';
-echo '<option value="1">舒壓植物園</option>';
-echo '<option value="2">打開新世界</option>';
-echo '<option value="3">趨勢聯想</option>';
-echo '<option value="4">溝通媒介</option>';
-echo '<option value="5">摩斯密碼</option>';
-echo '<option value="6">聽力輔助</option>';
+echo '<option value="1" '.$array[1].'>舒壓植物園</option>';
+echo '<option value="2" '.$array[2].'>打開新世界</option>';
+echo '<option value="3" '.$array[3].'>趨勢聯想</option>';
+echo '<option value="4" '.$array[4].'>溝通媒介</option>';
+echo '<option value="5" '.$array[5].'>摩斯密碼</option>';
+echo '<option value="6" '.$array[6].'>聽力輔助</option>';
 echo '</select>';
 echo '</form>';
 echo '<script src="js/point.js"></script>';

@@ -1,6 +1,7 @@
 <?php
 include("../../../database.php");
 include("../../../dbclass.php");
+session_start();
 $name = $_POST['name'];
 $db = new database('seiawan');
 $db->table('participant');

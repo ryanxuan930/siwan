@@ -38,9 +38,10 @@ function query(input){
 $(document).ready(function(){
 	$("#pass_button").click(function(){
 		var input = $("#pass").val();
-		$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
-			alert(e);
-		});
+		console.log(input);
+		//$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
+			//alert(e);
+		//});
 	});
 });
 </script>

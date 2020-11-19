@@ -22,9 +22,9 @@ echo '
 <script src="js/reader/js/effects.js"></script>
 <script>
 function query(input){
-	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
-		alert(e);
-	});
+	//$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
+		//alert(e);
+	//});
 }
 </script>
 ';

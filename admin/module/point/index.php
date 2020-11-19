@@ -30,15 +30,13 @@ echo '
 <script type="text/javascript" src="js/reader/js/qr/databr.js"></script>
 <script src="js/reader/js/effects.js"></script>
 <script>
-$(document).ready(function(){
-	$("#pass_button").click(function(){
-		var input = $("#pass").val();
-		$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
-			alert(e);
-		});
-	});
-});
 function query(input){
+	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
+		alert(e);
+	});
+}
+function fetch(input){
+	var input = $("#pass").val();
 	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
 		alert(e);
 	});
@@ -68,6 +66,6 @@ echo '
 <button id="scan" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">掃描QR Code</button>
 ';
 echo '<input type="text" id="pass" style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;" name="student" placeholder="請輸入通關者學號" />';
-echo '<button id="pass_button" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">完成本關卡</button>';
+echo '<button onClick="fetch()" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">完成本關卡</button>';
 echo '</div>';
 ?>

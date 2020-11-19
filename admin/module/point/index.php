@@ -23,7 +23,7 @@ echo '<button id="pass_button" style="color:white;background-color: #E65100;widt
 echo '</form>';
 echo '
 <video id="preview"></video>
-    <script type="text/javascript">
+    <script>
       let scanner = new Instascan.Scanner({ video: document.getElementById(\'preview\') });
       scanner.addListener(\'scan\', function (content) {
         console.log(content);

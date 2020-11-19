@@ -37,7 +37,7 @@ switch($section){
 $db->table('participant');
 $db->update($sec.'=1','stu_id="'.$stu_id.'"');
 if($db->error()){
-	echo '連線錯誤\n'$db->error();
+	echo '連線錯誤\n'.$db->error();
 }else{
 	echo $stu_id.'通過'.$data.'關卡';
 }

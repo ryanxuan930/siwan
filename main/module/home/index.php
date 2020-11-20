@@ -26,36 +26,36 @@ echo '<div class="participant">'.strtoupper($name).'</div>';
 echo '<table class="participant_tb">';
 echo '<tr>';
 if($sec1){
-	echo '<td><span class="material-icons">grass</span> 舒壓植物園 Relaxing botanical garden <span class="material-icons">done</span></td>';
+	echo '<td><span class="material-icons">grass</span> 舒壓植物園 Relaxing botanical garden</td>';
 }else{
 	echo '<td style="opacity:0.5"><span class="material-icons">grass</span> 舒壓植物園 Relaxing botanical garden</td>';
 }
 if($sec2){
-	echo '<td><span class="material-icons">looks</span> 打開新世界 New horizons <span class="material-icons">done</span></td>';
+	echo '<td><span class="material-icons">looks</span> 打開新世界 New horizons</td>';
 }else{
 	echo '<td style="opacity:0.5"><span class="material-icons">looks</span> 打開新世界 New horizons</td>';
 }
 echo '</tr>';
 echo '<tr>';
 if($sec3){
-	echo '<td><span class="material-icons">timeline</span> 趨勢聯想 Trend association <span class="material-icons">done</span></td>';
+	echo '<td><span class="material-icons">timeline</span> 趨勢聯想 Trend association</td>';
 }else{
 	echo '<td style="opacity:0.5"><span class="material-icons">timeline</span> 趨勢聯想 Trend association</td>';
 }
 if($sec4){
-	echo '<td><span class="material-icons">forum</span> 溝通媒介 Communication media <span class="material-icons">done</span></td>';
+	echo '<td><span class="material-icons">forum</span> 溝通媒介 Communication media</td>';
 }else{
 	echo '<td style="opacity:0.5"><span class="material-icons">forum</span> 溝通媒介 Communication media</td>';
 }
 echo '</tr>';
 echo '<tr>';
 if($sec5){
-	echo '<td><span class="material-icons">vpn_key</span> 摩斯密碼 Decoder<span class="material-icons">done</span></td>';
+	echo '<td><span class="material-icons">vpn_key</span> 摩斯密碼 Decoder</td>';
 }else{
 	echo '<td style="opacity:0.5"><span class="material-icons">vpn_key</span> 摩斯密碼 Decoder</td>';
 }
 if($sec6){
-	echo '<td><span class="material-icons">hearing</span> 聽力輔助 I know what you said <span class="material-icons">done</span></td>';
+	echo '<td><span class="material-icons">hearing</span> 聽力輔助 I know what you said</td>';
 }else{
 	echo '<td style="opacity:0.5"><span class="material-icons">hearing</span> 聽力輔助 I know what you said</td>';
 }

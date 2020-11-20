@@ -110,6 +110,7 @@ function configpage(){
 function logout(){
 	location.href = "module/auth/logout.php";
 }
+var source = new EventSource("../admin_server.php");
 source.onmessage = function(event){
 	if(event.data == "info"){
 		$.post("module/home/info.php",function (data){

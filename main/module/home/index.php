@@ -25,7 +25,12 @@ echo '<div class="participant">['.$id.']</div>';
 echo '<div class="participant">'.strtoupper($name).'</div>';
 echo '<table class="participant_tb">';
 echo '<tr>';
-echo '<td><span class="material-icons">grass</span> 舒壓植物園</td>';
+if($sec1){
+	echo '<td><span class="material-icons">grass</span> 舒壓植物園</td>';
+}else{
+	echo '<td style="opacity:0.75"><span class="material-icons">grass</span> 舒壓植物園</td>';
+}
+
 echo '<td><span class="material-icons">looks</span> 打開新世界</td>';
 echo '</tr>';
 echo '<tr>';

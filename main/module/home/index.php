@@ -28,7 +28,7 @@ echo '<div id="qrcode"></div>';
 echo '<hr>';
 echo '<div class="participant">['.$id.']</div>';
 echo '<div class="participant">'.strtoupper($name).'</div>';
-echo '<table class="participant_tb" style="padding: 5px; border: 2px #BDBDBD solid; border-radius: 10px;">';
+echo '<table class="participant_tb border">';
 echo '<tr>';
 if($sec1){
 	echo '<td><span class="material-icons">grass</span> 舒壓植物園<br>Relaxing botanic garden</td>';
@@ -67,10 +67,10 @@ if($sec6){
 echo '</tr>';
 echo '</table>';
 if($present){
-	echo '<div class="blink" style="padding: 5px; border: 2px #BDBDBD solid; border-radius: 10px;">你拿過獎品囉～ You have collected your reward.^^</div>';
+	echo '<div class="border">你拿過獎品囉～ You have collected your reward.^^</div>';
 }
 if($data){
-	echo '<div style="padding: 5px; border: 2px #BDBDBD solid; border-radius: 10px;">'.$data.'</div>';
+	echo '<div class="border">'.$data.'</div>';
 }
 echo '<script>';
 echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';

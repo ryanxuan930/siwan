@@ -27,7 +27,12 @@ hr{
 .participant_tb td{
 	padding: 5px;
 }
-
+.border{
+	margin: 5px 0;
+	padding: 5px; 
+	border: 2px #BDBDBD solid; 
+	border-radius: 10px;
+}
 @media screen and (max-width: 600px){
 	.container_box{
 		max-width: 95%;

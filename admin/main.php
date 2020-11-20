@@ -104,7 +104,10 @@ function configpage(){
 function logout(){
 	location.href = "module/auth/logout.php";
 }
-
+source.onmessage = function(event){
+	if(event.data == "back"){
+	}
+};
 //ini
 homepage();
 topNav();

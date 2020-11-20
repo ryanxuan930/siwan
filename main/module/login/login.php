@@ -13,7 +13,7 @@ while($row = $result->fetch_row()){
 if($result->num_rows){
 	if($present){
 		echo '<script>
-		alert("歡迎回來～咦！你好像已經換過禮物囉...不過沒關係，還是可以繼續你的旅程～\nWellcome back! It seems that you have already received the gift... but don\'t worry, you still can proceed your journey. Let\'s Go! ");
+		alert("歡迎回來～咦！你好像已經換過禮物囉...不過沒關係，還是可以繼續你的旅程～\nWellcome back! It seems that you have already collected your reward... but don\'t worry, you still can proceed your journey. Let\'s Go! ");
 		location.href="../../main.php";
 		</script>';
 	}else{

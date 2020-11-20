@@ -18,7 +18,7 @@
 			<div>
 				<label for="id" style="color: lightgray">輸入你的學號，來開始未來之旅</label>
 			</div>
-    		<input type="text" placeholder="Enter Your Student ID" name="id" required>
+    		<input type="text" placeholder="Enter Your Student ID" name="id" maxlength="10" required>
 			<button type="submit" class="btn">GO</button>
   		</form>
 	</div>

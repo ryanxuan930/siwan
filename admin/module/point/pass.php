@@ -45,6 +45,6 @@ if($db->error()){
 }else{
 	echo $stu_id.'通過'.$data.'關卡';
 	$db->table('data');
-	$db->update('refresh="'.$stu_id.'"','');
+	$db->update('refresh="'.$stu_id.'"','1=1');
 }
 ?>

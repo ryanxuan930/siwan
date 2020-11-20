@@ -70,7 +70,7 @@ if($present){
 	echo '<div class="border">你拿過獎品囉～ You have collected your reward.^^</div>';
 }
 if($data){
-	echo '<div class="border">西灣小天使：<hr>'.$data.'</div>';
+	echo '<div class="border">遊戲廣播：<hr>'.$data.'</div>';
 }
 echo '<script>';
 echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';

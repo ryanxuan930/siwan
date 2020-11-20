@@ -6,7 +6,7 @@ $db = new database('seiawan');
 $db->table('data');
 $result = $db->select_all();
 while($row = $result->fetch_row()){
-	$id = $row[0];
+	$id = $row[3];
 }
 echo "data: {$id}\n\n";
 flush();

@@ -31,7 +31,7 @@ function fetch(){
 		$("#container").html(data);
 	});
 }
-var source = new EventSource("demo_sse.php");
+var source = new EventSource("../server.php");
 source.onmessage = function(event) {
 	if(event.data == "<?php echo $_SESSION['id'];?>"){
 		fetch();

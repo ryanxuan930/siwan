@@ -27,8 +27,23 @@ hr{
 .participant_tb td{
 	padding: 5px;
 }
+.marqee {
+ 	margin: 0 auto;
+ 	overflow: hidden; 
+ 	position: relative;
+}
 @media screen and (max-width: 600px){
 	.container_box{
 		max-width: 95%;
 	}
+}
+@keyframes marqee {
+	0%{
+  		left: 100%;
+  		transform: translateX(0%);
+ 	}
+ 	100% {
+  		left: 0;
+  		transform: translateX(-100%);
+ 	}
 }

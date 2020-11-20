@@ -12,11 +12,11 @@
 </head>
 <body>
 	<div class="bg-img">
-		<div style="height: 50px;"></div>
+		<div style="height: 5vh;"></div>
 		<div class="container_box">
 			<div id="container" class="container"></div>
 		</div>
-		<div style="height: 10vh;"></div>
+		<div style="height: 15vh;"></div>
 		<div class="footer">
   			<p>© 2020 A Company in Siwan College</p>
   			<p>Powered by Rikujo from Ryan P.H. Chang</p>

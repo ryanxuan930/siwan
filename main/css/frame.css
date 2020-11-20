@@ -20,6 +20,12 @@ hr{
 	color: #424242;
 	font-weight: 500;
 }
+.participant_tb{
+	width: 100%;
+}
+.participant_tb td{
+	padding: 5px;
+}
 @media screen and (max-width: 600px){
 	.container_box{
 		max-width: 95%;

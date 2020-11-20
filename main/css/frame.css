@@ -28,13 +28,10 @@ hr{
 	padding: 5px;
 }
 .border{
-	margin: 5px 0;
+	margin: 10px 0;
 	padding: 5px; 
 	border: 2px #BDBDBD solid; 
 	border-radius: 10px;
-}
-.border div{
-	padding: 5px;
 }
 @media screen and (max-width: 600px){
 	.container_box{

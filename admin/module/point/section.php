@@ -25,6 +25,9 @@ switch($section){
 	case 6:
 		echo '聽力輔助';
 		break;
+	case 7:
+		echo '獎品兌換';
+		break;
 }
 $db = new database('seiawan');
 $db->table('admin');

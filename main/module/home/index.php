@@ -61,9 +61,7 @@ if($sec6){
 }
 echo '</tr>';
 echo '</table>';
-echo '
-<script>
-$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});
-</script>
-';
+echo '<script>';
+echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';
+echo '</script>';
 ?>

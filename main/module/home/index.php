@@ -28,7 +28,7 @@ echo '<tr>';
 if($sec1){
 	echo '<td><span class="material-icons">grass</span> 舒壓植物園<br>Relaxing botanical garden</td>';
 }else{
-	echo '<td style="opacity:0.5"><span class="material-icons">grass</span><br>舒壓植物園 Relaxing botanical garden</td>';
+	echo '<td style="opacity:0.5"><span class="material-icons">grass</span>舒壓植物園<br>Relaxing botanical garden</td>';
 }
 if($sec2){
 	echo '<td><span class="material-icons">looks</span> 打開新世界<br>New horizons</td>';

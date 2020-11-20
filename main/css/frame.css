@@ -31,20 +31,19 @@ hr{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     -webkit-animation-name: blink; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
     animation-name: blink;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes blink {
-    from {background-color: red;}
-    to {background-color: yellow;}
+    from {color: #424242;}
+    to {color: white;}
 }
- 
 /* Standard syntax */
 @keyframes blink {
-    from {background-color: red;}
-    to {background-color: yellow;}
+    from {color: #424242;}
+    to {color: white;}
 }
 @media screen and (max-width: 600px){
 	.container_box{

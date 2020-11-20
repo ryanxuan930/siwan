@@ -37,11 +37,17 @@ switch($section){
 		$sec = 'present';
 		$data = '兌換獎品';
 		$db->table('participant');
-		$result = $db->select_where(0,'stu_id="'.$stu_id.'" AND present=1');
-		if($result->num_rows){
+		$result = $db->select_where(0,'stu_id="'.$stu_id.'"');
+		while($row = $result->fetch_row()){
+			$sum = $row[2]+$row[3]+$row[4]+$row[5]+$row[6]+$row[7];
+			$present = $row[9];
+		}
+		if($present){
 			$remark = '已兌換過獎品';
+		}else if($sum>0){
+			$remark = '共通過'.$sum.'個關卡';
 		}else{
-			$remark = '獎品兌換成功';
+			$remark = '尚未有點數可兌換';
 		}
 		
 		break;

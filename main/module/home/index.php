@@ -28,7 +28,7 @@ echo '<div id="qrcode"></div>';
 echo '<hr>';
 echo '<div class="participant">['.$id.']</div>';
 echo '<div class="participant">'.strtoupper($name).'</div>';
-echo '<table class="participant_tb">';
+echo '<table class="participant_tb" style="padding: 5px; border: 2px #BDBDBD solid; border-radius: 10px;">';
 echo '<tr>';
 if($sec1){
 	echo '<td><span class="material-icons">grass</span> 舒壓植物園<br>Relaxing botanic garden</td>';

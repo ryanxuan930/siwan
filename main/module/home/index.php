@@ -23,6 +23,20 @@ echo '<div id="qrcode"></div>';
 echo '<hr>';
 echo '<div class="participant">['.$id.']</div>';
 echo '<div class="participant">'.strtoupper($name).'</div>';
+echo '<table>';
+echo '<tr>';
+echo '<td><span class="material-icons">grass</span>舒壓植物園</td>';
+echo '<td><span class="material-icons">looks</span>打開新世界</td>';
+echo '</tr>';
+echo '<tr>';
+echo '<td><span class="material-icons">timeline</span>趨勢聯想</td>';
+echo '<td><span class="material-icons">forum</span>溝通媒介</td>';
+echo '</tr>';
+echo '<tr>';
+echo '<td><span class="material-icons">vpn_key</span>摩斯密碼</td>';
+echo '<td><span class="material-icons">hearing</span>聽力輔助</td>';
+echo '</tr>';
+echo '</table>';
 echo '
 <script>
 $("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});

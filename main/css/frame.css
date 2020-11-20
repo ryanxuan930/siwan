@@ -34,7 +34,7 @@ hr{
 	padding: 5px;
 }
 .marquee span{
-	width: inherit;
+	width: 100%;
 	animation: marquee 15s linear infinite;
 }
 @media screen and (max-width: 600px){

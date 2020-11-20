@@ -72,6 +72,7 @@ if($present){
 if($data){
 	echo '<div class="border">遊戲廣播：<hr>'.$data.'</div>';
 }
+echo '<button>登出 Log Out</button>';
 echo '<script>';
 echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';
 echo '</script>';

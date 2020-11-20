@@ -36,6 +36,14 @@ switch($section){
 	case 7:
 		$sec = 'present';
 		$data = '兌換獎品';
+		$db->table('participant');
+		$result = $db->select_where(0,'stu_id="'.$stu_id.'" AND present=1');
+		if($result->num_rows){
+			$remark = '已兌換過獎品';
+		}else{
+			$remark = '獎品兌換成功';
+		}
+		
 		break;
 }
 $db->table('participant');
@@ -43,7 +51,11 @@ $db->update($sec.'=1, current="'.$section.'"','stu_id="'.$stu_id.'"');
 if($db->error()){
 	echo '連線錯誤\n'.$db->error();
 }else{
-	echo $stu_id.'通過'.$data.'關卡';
+	if($section==7){
+		echo $stu_id.$remark;
+	}else{
+		echo $stu_id.'通過'.$data.'關卡';
+	}
 	$db->table('data');
 	$db->update('refresh="'.$stu_id.'"','1=1');
 }

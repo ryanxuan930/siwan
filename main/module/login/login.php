@@ -7,11 +7,22 @@ $_SESSION['id']=$id;
 $db = new database('seiawan');
 $db->table('participant');
 $result = $db->select_where(0,'stu_id="'.$id.'"');
+while($row = $result->fetch_row()){
+	$present = $row[9];
+}
 if($result->num_rows){
-	echo '<script>
-	alert("歡迎回來！Wellcome back!");
-	location.href="../../main.php";
-	</script>';
+	if($present){
+		echo '<script>
+		alert("歡迎回來！不過你好像已經換過禮物囉...不過沒關係，還是可以繼續你的旅程～\nWellcome back! It seems that you have  received the gift... but don\'t worry, you still can continue your journey. Let\'s Go! ");
+		location.href="../../main.php";
+		</script>';
+	}else{
+		echo '<script>
+		alert("歡迎回來！Wellcome back!");
+		location.href="../../main.php";
+		</script>';
+	}
+	
 }else{
 	$db->insert('stu_id,name,sec1,sec2,sec3,sec4,sec5,sec6,current,present','"'.$id.'",0,0,0,0,0,0,0,0,0');
 }

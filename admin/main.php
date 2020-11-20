@@ -85,12 +85,12 @@ function homepage(){
 	topNav();
 	$.post("module/home/index.php",function (data){
 		$("#container").html(data);
-	});
-	$.post("module/home/info.php",function (data){
-		$("#info").html(data);
-	});
-	$.post("module/home/announce.php",function (data){
-		$("#announce").html(data);
+		$.post("module/home/info.php",function (data){
+			$("#info").html(data);
+		});
+		$.post("module/home/announce.php",function (data){
+			$("#announce").html(data);
+		});
 	});
 }
 function pointpage(){

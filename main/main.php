@@ -33,7 +33,12 @@ if(!isset($_SESSION['id'])){
 	</div>
 <script>
 function fetch(){
-	$.post("module/home/index.php",{query: 1},function(data){
+	$.post("module/home/index.php",function(data){
+		$("#container").html(data);
+	});
+}
+function logout(){
+	$.post("module/logout/logout.php",function(data){
 		$("#container").html(data);
 	});
 }

@@ -38,7 +38,7 @@ function fetch(){
 	});
 }
 function logout(){
-	$.post("module/logout/logout.php");
+	location.href="module/logout/logout.php";
 }
 var source = new EventSource("../server.php");
 source.onmessage = function(event){

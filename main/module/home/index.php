@@ -3,6 +3,11 @@ session_start();
 $id = $_SESSION['id'];
 include('../../../dbclass.php');
 $db = new database('seiawan');
+$db->table('data');
+$result = $db->select_all();
+while($row = $result->fetch_row()){
+	$data = $row[1];
+}
 $db->table('participant');
 $result = $db->select_where(0,'stu_id="'.$id.'"');
 while($row = $result->fetch_row()){
@@ -64,7 +69,7 @@ echo '</table>';
 if($present){
 	echo '<div style="padding: 5px">你拿過獎品囉～ You have collected your reward.^^</div>';
 }
-echo '<div class="marquee"><span>測試消息</span></div>';
+echo '<div class="marquee"><span>'.$data.'</span></div>';
 echo '<script>';
 echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';
 echo '</script>';

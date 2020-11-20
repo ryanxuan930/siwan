@@ -4,7 +4,7 @@ include('../../../dbclass.php');
 $db = new database('seiawan');
 $db->table('admin');
 $result = $db->select_where(0,'account="'.$_SESSION['account'].'"');
-$array = array('','','','','','','');
+$array = array('','','','','','','','');
 while($row = $result->fetch_row()){
 	$section = $row[4];
 	$array[$section]='selected';
@@ -55,6 +55,7 @@ echo '<option value="3" '.$array[3].'>趨勢聯想</option>';
 echo '<option value="4" '.$array[4].'>溝通媒介</option>';
 echo '<option value="5" '.$array[5].'>摩斯密碼</option>';
 echo '<option value="6" '.$array[6].'>聽力輔助</option>';
+echo '<option value="7" '.$array[7].'>聽力輔助</option>';
 echo '</select>';
 echo '</form>';
 echo '<script src="js/point.js"></script>';

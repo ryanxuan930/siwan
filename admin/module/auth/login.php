@@ -9,7 +9,6 @@ $stmt->bind_param("ss", $account, $password);
 $stmt->execute();
 $result = $stmt->get_result();
 if($result->num_rows){
-	ini_set('session.gc_maxlifetime', 43200);
 	session_start();
 	$_SESSION['account'] = $account;
 	header('Location: ../../main.php');

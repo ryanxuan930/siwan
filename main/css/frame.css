@@ -27,12 +27,14 @@ hr{
 .participant_tb td{
 	padding: 5px;
 }
-.marquee {
-	width: inherit;
+.marquee{
  	margin: 0 auto;
  	overflow: hidden; 
  	position: relative;
 	padding: 5px;
+}
+.marquee span{
+	width: inherit;
 	animation: marquee 15s linear infinite;
 }
 @media screen and (max-width: 600px){

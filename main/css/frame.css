@@ -39,7 +39,7 @@ hr{
  	position: relative;
 	padding: 5px;
 	width: 100%;
-	animation: marquee 15s linear infinite;
+	animation: marquee 10s linear infinite;
 }
 @media screen and (max-width: 600px){
 	.container_box{

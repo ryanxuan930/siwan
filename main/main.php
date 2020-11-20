@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['id'])){
+if(!isset($_SESSION['id'])){
 	echo '<script>';
 	echo 'alert("你好像還沒登入唷 Please Login first.");';
 	echo 'location.href="index.php";';

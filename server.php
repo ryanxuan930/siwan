@@ -10,5 +10,5 @@ while($row = $result->fetch_row()){
 }
 echo "data: {$id}\n\n";
 flush();
-$db->update('refresh="0"','');
+$db->update('refresh="0"','1=1');
 ?>

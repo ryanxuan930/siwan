@@ -70,7 +70,7 @@ if($present){
 	echo '<div class="blink" style="padding: 5px">你拿過獎品囉～ You have collected your reward.^^</div>';
 }
 if($data){
-	echo '<div style="padding: 5px">'.$data.'</div>';
+	echo '<div style="padding: 5px; border: 2px #BDBDB solid; border-radius: 10px;">'.$data.'</div>';
 }
 echo '<script>';
 echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';

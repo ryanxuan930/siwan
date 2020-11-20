@@ -23,7 +23,7 @@ echo '<div id="qrcode"></div>';
 echo '<hr>';
 echo '<div class="participant">['.$id.']</div>';
 echo '<div class="participant">'.strtoupper($name).'</div>';
-echo '<table>';
+echo '<table class="participant_tb">';
 echo '<tr>';
 echo '<td><span class="material-icons">grass</span> 舒壓植物園</td>';
 echo '<td><span class="material-icons">looks</span> 打開新世界</td>';

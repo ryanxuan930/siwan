@@ -28,18 +28,37 @@ echo '<tr>';
 if($sec1){
 	echo '<td><span class="material-icons">grass</span> 舒壓植物園</td>';
 }else{
-	echo '<td style="opacity:0.75"><span class="material-icons">grass</span> 舒壓植物園</td>';
+	echo '<td style="opacity:0.5"><span class="material-icons">grass</span> 舒壓植物園</td>';
 }
-
-echo '<td><span class="material-icons">looks</span> 打開新世界</td>';
+if($sec2){
+	echo '<td><span class="material-icons">looks</span> 打開新世界</td>';
+}else{
+	echo '<td style="opacity:0.5"><span class="material-icons">looks</span> 打開新世界</td>';
+}
 echo '</tr>';
 echo '<tr>';
-echo '<td><span class="material-icons">timeline</span> 趨勢聯想</td>';
-echo '<td><span class="material-icons">forum</span> 溝通媒介</td>';
+if($sec3){
+	echo '<td><span class="material-icons">timeline</span> 趨勢聯想</td>';
+}else{
+	echo '<td style="opacity:0.5"><span class="material-icons">timeline</span> 趨勢聯想</td>';
+}
+if($sec4){
+	echo '<td><span class="material-icons">forum</span> 溝通媒介</td>';
+}else{
+	echo '<td style="opacity:0.5"><span class="material-icons">forum</span> 溝通媒介</td>';
+}
 echo '</tr>';
 echo '<tr>';
-echo '<td><span class="material-icons">vpn_key</span> 摩斯密碼</td>';
-echo '<td><span class="material-icons">hearing</span> 聽力輔助</td>';
+if($sec5){
+	echo '<td><span class="material-icons">vpn_key</span> 摩斯密碼</td>';
+}else{
+	echo '<td style="opacity:0.5"><span class="material-icons">vpn_key</span> 摩斯密碼</td>';
+}
+if($sec6){
+	echo '<td><span class="material-icons">hearing</span> 聽力輔助</td>';
+}else{
+	echo '<td style="opacity:0.5"><span class="material-icons">hearing</span> 聽力輔助</td>';
+}
 echo '</tr>';
 echo '</table>';
 echo '

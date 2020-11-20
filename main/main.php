@@ -38,7 +38,7 @@ function fetch(){
 	});
 }
 var source = new EventSource("../server.php");
-source.onmessage = function(event) {
+source.onmessage = function(event){
 	if(event.data == "<?php echo $_SESSION['id'];?>" || event.data == "all"){
 		fetch();
 	}

@@ -64,7 +64,7 @@ echo '</table>';
 if($present){
 	echo '<div style="padding: 5px">你拿過獎品囉～ You have collected your reward.^^</div>';
 }
-echo '<div class="marquee">測試消息</div>';
+echo '<div class="marquee"><span>測試消息</span></div>';
 echo '<script>';
 echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';
 echo '</script>';

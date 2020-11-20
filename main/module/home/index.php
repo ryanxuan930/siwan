@@ -67,7 +67,7 @@ if($sec6){
 echo '</tr>';
 echo '</table>';
 if($present){
-	echo '<div class="border"><span class="material-icons">stars</span> 你拿過獎品囉～ You have collected your reward.^^</div>';
+	echo '<div class="border"><span class="material-icons">stars</span> 獎品已領取 Rewarded.^^</div>';
 }
 if($data){
 	echo '<div class="border">遊戲廣播：<hr>'.$data.'</div>';

@@ -86,6 +86,12 @@ function homepage(){
 	$.post("module/home/index.php",function (data){
 		$("#container").html(data);
 	});
+	$.post("module/home/info.php",function (data){
+		$("#info").html(data);
+	});
+	$.post("module/home/announce.php",function (data){
+		$("#announce").html(data);
+	});
 }
 function pointpage(){
 	currentPageNav(2);
@@ -105,7 +111,15 @@ function logout(){
 	location.href = "module/auth/logout.php";
 }
 source.onmessage = function(event){
-	if(event.data == "back"){
+	if(event.data == "info"){
+		$.post("module/home/info.php",function (data){
+			$("#info").html(data);
+		});
+	}
+	if(event.data == "announce"){
+		$.post("module/home/announce.php",function (data){
+			$("#announce").html(data);
+		});
 	}
 };
 //ini

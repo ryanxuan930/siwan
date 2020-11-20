@@ -1,4 +1,5 @@
 <?php
+ini_set('session.gc_maxlifetime', 43200);
 session_start();
 if(!isset($_SESSION['account'])){
 	echo '<script>alert("尚未登入"); location.href="index.php"</script>';

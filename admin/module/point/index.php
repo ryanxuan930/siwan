@@ -55,7 +55,7 @@ echo '<option value="3" '.$array[3].'>趨勢聯想</option>';
 echo '<option value="4" '.$array[4].'>溝通媒介</option>';
 echo '<option value="5" '.$array[5].'>摩斯密碼</option>';
 echo '<option value="6" '.$array[6].'>聽力輔助</option>';
-echo '<option value="7" '.$array[7].'>聽力輔助</option>';
+echo '<option value="7" '.$array[7].'>獎品兌換</option>';
 echo '</select>';
 echo '</form>';
 echo '<script src="js/point.js"></script>';

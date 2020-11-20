@@ -38,9 +38,7 @@ function fetch(){
 	});
 }
 function logout(){
-	$.post("module/logout/logout.php",function(data){
-		$("#container").html(data);
-	});
+	$.post("module/logout/logout.php");
 }
 var source = new EventSource("../server.php");
 source.onmessage = function(event){

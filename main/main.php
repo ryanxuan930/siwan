@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html>
 <head>
@@ -28,6 +31,12 @@ function fetch(){
 		$("#container").html(data);
 	});
 }
+var source = new EventSource("demo_sse.php");
+source.onmessage = function(event) {
+	if(event.data == "<?php echo $_SESSION['id'];?>"){
+		fetch();
+	}
+};
 fetch();
 </script>
 </body>

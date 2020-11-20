@@ -62,7 +62,7 @@ if($sec6){
 echo '</tr>';
 echo '</table>';
 if($present){
-	echo '<div>你拿過獎品囉～ You have collected your reward.^^</div>';
+	echo '<div style="padding: 5px">你拿過獎品囉～ You have collected your reward.^^</div>';
 }
 echo '<div class="marquee">測試消息</div>';
 echo '<script>';

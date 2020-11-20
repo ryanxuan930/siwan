@@ -33,9 +33,13 @@ switch($section){
 		$sec = 'sec6';
 		$data = '聽力輔助';
 		break;
+	case 7:
+		$sec = 'present';
+		$data = '兌換獎品';
+		break;
 }
 $db->table('participant');
-$db->update($sec.'=1','stu_id="'.$stu_id.'"');
+$db->update($sec.'=1, current="'.$section.'"','stu_id="'.$stu_id.'"');
 if($db->error()){
 	echo '連線錯誤\n'.$db->error();
 }else{

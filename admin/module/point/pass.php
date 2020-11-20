@@ -44,5 +44,7 @@ if($db->error()){
 	echo '連線錯誤\n'.$db->error();
 }else{
 	echo $stu_id.'通過'.$data.'關卡';
+	header('Location: ../../../server.php?id='.$stu_id);
+	exit();
 }
 ?>

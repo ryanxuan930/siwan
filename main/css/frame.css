@@ -34,7 +34,7 @@ hr{
 	padding: 5px;
 }
 .marquee span{
-	padding: 5px;
+	padding-left: 100%;
 	white-space: nowrap;
 	margin: 0 auto;
  	overflow: hidden; 

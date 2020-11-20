@@ -51,7 +51,11 @@ switch($permission){
   		<a id="name_block" disabled><?php echo $name.' '.$permi_display; ?></a>
   		<a onClick="homepage()">首頁</a>
 		<a onClick="pointpage()">積點管理</a>
-  		<a onClick="configpage()">系統設定</a>
+		<?php
+		if($permission>4){
+			echo '<a onClick="configpage()">系統設定</a>';
+		}
+		?>
   		<a onClick="logout()">登出</a>
   		<a style="font-size:15px;" class="icon" onclick="topNav()">&#9776;</a>
 	</div>

@@ -8,7 +8,7 @@ $result = $db->select_all();
 while($row = $result->fetch_row()){
 	$id = $row[3];
 }
-echo "data: {$id}\n\n";
+echo "data: ".$id."\n\n";
 flush();
 if($id=="alert" or $id="announce"){
 	sleep(10);

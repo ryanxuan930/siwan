@@ -4,10 +4,12 @@ $db = new database('seiawan');
 $db->table('data');
 $result = $db->select_all();
 while($row = $result->fetch_row()){
-	echo $row[4];
+	$content = $row[4];
 }
+echo $content;
 flush();
 sleep(2);
+echo $content;
 flush();
 sleep(10);
 $db->update('admin=0','1=1');

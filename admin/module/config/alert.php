@@ -4,6 +4,7 @@ include('../../../dbclass.php');
 $content = $_POST['content'];
 $db = new database('seiawan');
 $db->table('data');
-$db->update('`admin`="alert", `refresh`="alert",`alert`="'.$content.'"','1=1');
+$db->update('`refresh`="",`admin`="",`alert`=""','1=1');
+$db->update('`refresh`="alert",`admin`="alert",`alert`="'.$content.'"','1=1');
 echo '已發布通知';
 ?>

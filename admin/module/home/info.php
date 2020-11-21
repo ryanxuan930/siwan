@@ -16,7 +16,7 @@ while($row = $result->fetch_row()){
 	$sec3 += $row[4];
 	$sec4 += $row[5];
 	$sec5 += $row[6];
-	$sec5 += $row[7];
+	$sec6 += $row[7];
 	$present += $row[9];
 }
 echo '<table>';

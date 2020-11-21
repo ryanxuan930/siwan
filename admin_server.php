@@ -10,8 +10,6 @@ while($row = $result->fetch_row()){
 }
 echo "data: ".$id."\n\n";
 flush();
-if($id=="alert" or $id="announce"){
-	sleep(10);
-}
+sleep(10);
 $db->update('admin="0"','1=1');
 ?>

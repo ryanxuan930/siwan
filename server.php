@@ -11,7 +11,7 @@ while($row = $result->fetch_row()){
 echo "data: {$id}\n\n";
 flush();
 if($id=="front" or $id=="alert"){
-	sleep(5);
+	sleep(10);
 }
 $db->update('refresh="0"','1=1');
 ?>

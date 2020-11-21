@@ -6,6 +6,6 @@ $result = $db->select_all();
 while($row = $result->fetch_row()){
 	echo $row[4];
 }
-sleep(5);
+sleep(2);
 $db->update('admin=0','1=1');
 ?>

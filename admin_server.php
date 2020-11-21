@@ -13,5 +13,5 @@ flush();
 if($id=="alert" or $id="front"){
 	sleep(8);
 }
-$db->update('refresh="0"','1=1');
+$db->update('admin="0"','1=1');
 ?>

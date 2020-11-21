@@ -28,4 +28,5 @@ echo '<tr><td>溝通媒介</td><td>'.$sec4.' 人</td></tr>';
 echo '<tr><td>摩斯密碼</td><td>'.$sec5.' 人</td></tr>';
 echo '<tr><td>聽力輔助</td><td>'.$sec6.' 人</td></tr>';
 echo '</table>';
+echo "<div>更新時間：".date("Y-m-d H:i:sa")."</div>";
 ?>

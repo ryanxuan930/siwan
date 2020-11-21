@@ -94,7 +94,6 @@ function homepage(){
 		});
 		$.post("module/home/announce.php",function (data){
 			$("#announce").html(data);
-			alert("系統廣播最新消息，請至「首頁」中的「系統廣播」查看");
 		});
 	});
 }
@@ -117,7 +116,7 @@ function logout(){
 }
 var source = new EventSource("../admin_server.php");
 source.onmessage = function(event){
-	if(event.data == "info"){
+	if(event.data){
 		$.post("module/home/info.php",function (data){
 			$("#info").html(data);
 		});

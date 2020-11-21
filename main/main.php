@@ -35,6 +35,9 @@ if(!isset($_SESSION['id'])){
 function fetch(){
 	$.post("module/home/index.php",function(data){
 		$("#container").html(data);
+		$.post("module/home/announce.php",function(data){
+			$("#announce").html(data);
+		});
 	});
 }
 function logout(){

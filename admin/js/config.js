@@ -5,7 +5,7 @@ function announceAdmin(){
 		configpage();
 	})
 }
-function announceAdmin(){
+function announceFront(){
 	var value = $("#front_announcement").val();
 	$.post("../admin/module/config/front_announce.php",{content: value},function(data){
 		alert(data);

@@ -20,7 +20,7 @@ while($row = $result->fetch_row()){
 	$present += $row[9];
 }
 echo '<table>';
-echo '<tr><td>關卡</td><td>累計人數</td></tr>';
+echo '<tr><td style="width: 100px">關卡</td><td>累計人數</td></tr>';
 echo '<tr><td>舒壓植物園</td><td>'.$sec1.' 人</td></tr>';
 echo '<tr><td>打開新世界</td><td>'.$sec2.' 人</td></tr>';
 echo '<tr><td>趨勢聯想</td><td>'.$sec3.' 人</td></tr>';

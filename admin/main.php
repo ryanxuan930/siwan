@@ -129,6 +129,7 @@ source.onmessage = function(event){
 	if(event.data == "alert"){
 		$.post("module/home/alert.php",function (data){
 			alert(data);
+			setTimeout(function(){var getalert=1;}, 10000);
 		});
 	}
 };

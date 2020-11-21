@@ -6,7 +6,6 @@ $(document).ready(function(){
 			data: $("#section").serialize(),
 			success: function(result){
 				alert(result);
-				configpage();
 			},
 			error: function(){
 				alert("連線錯誤");

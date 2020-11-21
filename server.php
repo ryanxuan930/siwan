@@ -9,9 +9,9 @@ while($row = $result->fetch_row()){
 	$id = $row[0];
 }
 echo "data: {$id}\n\n";
-if($id=="front"){
+flush();
+if($id=="front" or $id=="alert"){
 	sleep(5);
 }
-flush();
 $db->update('refresh="0"','1=1');
 ?>

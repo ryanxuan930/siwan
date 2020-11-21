@@ -5,5 +5,5 @@ $content = $_POST['content'];
 $db = new database('seiawan');
 $db->table('data');
 echo $content;
-$db->update('refresh="front"','1=1');
+$db->update('refresh="alert"','1=1');
 ?>

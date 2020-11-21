@@ -53,6 +53,11 @@ source.onmessage = function(event){
 			$("#announce").html(data);
 		});
 	}
+	if(event.data == "alert"){
+		$.post("module/home/alert.php",function(data){
+			alert(data);
+		});
+	}
 };
 fetch();
 </script>

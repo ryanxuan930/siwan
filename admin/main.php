@@ -116,7 +116,7 @@ function logout(){
 }
 var source = new EventSource("../admin_server.php");
 source.onmessage = function(event){
-	if(event.data){
+	if(event.data !=0){
 		$.post("module/home/info.php",function (data){
 			$("#info").html(data);
 		});

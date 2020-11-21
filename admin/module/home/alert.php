@@ -7,6 +7,6 @@ while($row = $result->fetch_row()){
 	echo $row[4];
 }
 flush();
-sleep(8);
+sleep(20);
 $db->update('admin=0','1=1');
 ?>

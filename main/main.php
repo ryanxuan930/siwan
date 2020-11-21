@@ -42,8 +42,13 @@ function logout(){
 }
 var source = new EventSource("../server.php");
 source.onmessage = function(event){
-	if(event.data == "<?php echo $_SESSION['id'];?>" || event.data == "front"){
+	if(event.data == "<?php echo $_SESSION['id'];?>"){
 		fetch();
+	}
+	if(event.data == "front"){
+		$.post("module/home/announce.php",function(data){
+			$("#announce").html(data);
+		});
 	}
 };
 fetch();

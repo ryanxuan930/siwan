@@ -4,8 +4,8 @@ $db = new database('seiawan');
 $db->table('data');
 $result = $db->select_all();
 while($row = $result->fetch_row()){
-	$c1 = $row[1];
-	$c2 = $row[2];
+	$c2 = $row[1];
+	$c1 = $row[2];
 	$c3 = $row[4];
 }
 echo '<script src="js/config.js"></script>';

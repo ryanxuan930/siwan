@@ -127,6 +127,9 @@ source.onmessage = function(event){
 			$("#announce").html(data);
 		});
 	}
+};
+var alarm = new EventSource("../server.php");
+alarm.onmessage = function(event){
 	if(event.data == "alert"){
 		$.post("module/home/alert.php",function (data){
 			alert(data);

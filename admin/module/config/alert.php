@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("Asia/Taipei");
 $content = $_POST['content'];
 include('../../../dbclass.php');
 $content = $_POST['content'];

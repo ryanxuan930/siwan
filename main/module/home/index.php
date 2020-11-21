@@ -64,7 +64,7 @@ echo '</table>';
 if($present){
 	echo '<div class="border"><span class="material-icons">stars</span> 獎品已領取 Rewarded </div>';
 }
-echo '<div class="border"><div id="announce"></div></div>';
+echo '<div class="border">遊戲廣播：<hr><div id="announce"></div></div>';
 echo '<button class="btn" onClick="logout()">登出 Log Out</button>';
 echo '<script>';
 echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';

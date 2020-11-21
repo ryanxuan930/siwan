@@ -1,7 +1,7 @@
 <?php
 echo '<div class="console box">';
 echo '<h2>系統公告發布</h2><hr>';
-echo '<textarea id="announcement" style="min-height: 5ex; width:100%;"></textarea>';
-echo '<button class="login_btn" id="announce_submit">送出公告</button>';
+echo '<textarea id="announcement" style="min-height: 5ex; width:100%;margin: 10px 0; padding: 5px;"></textarea>';
+echo '<button onClick="announceSubmit()" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">完成本關卡</button>';
 echo '</div>';
 ?>

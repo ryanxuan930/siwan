@@ -123,7 +123,7 @@ source.onmessage = function(event){
 	}
 	if(event.data == "announce"){
 		$.post("module/home/announce.php",function (data){
-			alert("新系統公告");
+			alert("有新系統公告，請至「首頁」查看。");
 			$("#announce").html(data);
 		});
 	}

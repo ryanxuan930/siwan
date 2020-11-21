@@ -6,5 +6,6 @@ $db = new database('seiawan');
 $db->table('data');
 $db->update('alert="'.$content.'"','1=1');
 echo '已發布通知';
-$db->update('refresh="alert", admin="alert"','1=1');
+$db->update('refresh="alert"','1=1');
+$db->update('admin="alert"','1=1');
 ?>

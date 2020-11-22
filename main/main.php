@@ -44,8 +44,10 @@ function fetch(){
 function logout(){
 	location.href="module/logout/logout.php";
 }
-function playSound(soundfile) {
-    document.getElementById("sound").innerHTML="<audio src=\"../alert.mp3\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+function playSound() {
+    var audio = new Audio('../alert.mp3');
+	audio.play();
+	return true;
 }
 var source = new EventSource("../server.php");
 source.onmessage = function(event){
@@ -59,8 +61,9 @@ source.onmessage = function(event){
 	}
 	if(event.data == "alert"){
 		$.post("module/home/alert.php",function(data){
-			playSound();
-			alert(data);
+			if(playSound()){
+				alert(data);
+			}
 		});
 	}
 };

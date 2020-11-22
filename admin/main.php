@@ -114,6 +114,10 @@ function configpage(){
 function logout(){
 	location.href = "module/auth/logout.php";
 }
+function playSound() {
+    var audio = new Audio('../alert.mp3');
+	audio.play();
+}
 var source = new EventSource("../admin_server.php");
 source.onmessage = function(event){
 	if(event.data !=0){
@@ -130,6 +134,9 @@ source.onmessage = function(event){
 };
 var alarm = new EventSource("../server.php");
 alarm.onmessage = function(event){
+	if(event.data == "alert"){
+		playSound();
+	}
 	if(event.data == "alert"){
 		$.post("module/home/alert.php",function (data){
 			alert(data);

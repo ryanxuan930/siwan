@@ -33,6 +33,7 @@ if(!isset($_SESSION['id'])){
 	</div>
 	<div id="sound"></div>
 <script>
+alert("歡迎 Wellcome");
 function fetch(){
 	$.post("module/home/index.php",function(data){
 		$("#container").html(data);

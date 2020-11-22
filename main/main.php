@@ -31,6 +31,7 @@ if(!isset($_SESSION['id'])){
   			<p>Powered by Rikujo from Ryan P.H. Chang</p>
 		</div>
 	</div>
+	<div id="sound"></div>
 <script>
 function fetch(){
 	$.post("module/home/index.php",function(data){
@@ -42,6 +43,9 @@ function fetch(){
 }
 function logout(){
 	location.href="module/logout/logout.php";
+}
+function playSound(soundfile) {
+    document.getElementById("sound").innerHTML="<audio src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
 }
 var source = new EventSource("../server.php");
 source.onmessage = function(event){
@@ -55,10 +59,8 @@ source.onmessage = function(event){
 	}
 	if(event.data == "alert"){
 		$.post("module/home/alert.php",function(data){
-			var audio = new Audio('../alert.mp3');
-			if(audio.play();){
-				alert(data);
-			}
+			playSound('../alert.mp3');
+			alert(data);
 		});
 	}
 };

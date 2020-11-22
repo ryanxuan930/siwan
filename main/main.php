@@ -46,6 +46,7 @@ function logout(){
 }
 function playSound() {
     var audio = new Audio('../alert.mp3');
+	audio.load();
 	audio.play();
 }
 var source = new EventSource("../server.php");

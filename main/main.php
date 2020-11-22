@@ -45,7 +45,7 @@ function logout(){
 	location.href="module/logout/logout.php";
 }
 function playSound(soundfile) {
-    document.getElementById("sound").innerHTML="<audio src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+    document.getElementById("sound").innerHTML="<audio src=\"../alert.mp3\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
 }
 var source = new EventSource("../server.php");
 source.onmessage = function(event){
@@ -59,7 +59,7 @@ source.onmessage = function(event){
 	}
 	if(event.data == "alert"){
 		$.post("module/home/alert.php",function(data){
-			playSound('../alert.mp3');
+			playSound();
 			alert(data);
 		});
 	}

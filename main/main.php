@@ -47,7 +47,6 @@ function logout(){
 function playSound() {
     var audio = new Audio('../alert.mp3');
 	audio.play();
-	return true;
 }
 var source = new EventSource("../server.php");
 source.onmessage = function(event){

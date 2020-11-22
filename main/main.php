@@ -61,6 +61,8 @@ source.onmessage = function(event){
 	}
 	if(event.data == "alert"){
 		playSound();
+	}
+	if(event.data == "alert"){
 		$.post("module/home/alert.php",function(data){
 			alert(data);
 		});

@@ -55,9 +55,9 @@ source.onmessage = function(event){
 	}
 	if(event.data == "alert"){
 		$.post("module/home/alert.php",function(data){
+			alert(data);
 			var audio = new Audio('../alert.mp3');
 			audio.play();
-			alert(data);
 		});
 	}
 };

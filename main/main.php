@@ -60,10 +60,9 @@ source.onmessage = function(event){
 		});
 	}
 	if(event.data == "alert"){
+		playSound();
 		$.post("module/home/alert.php",function(data){
-			if(playSound()){
-				alert(data);
-			}
+			alert(data);
 		});
 	}
 };

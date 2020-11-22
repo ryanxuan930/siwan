@@ -56,8 +56,7 @@ source.onmessage = function(event){
 	if(event.data == "alert"){
 		$.post("module/home/alert.php",function(data){
 			var audio = new Audio('../alert.mp3');
-			var sound = audio.play();
-			if(sound){
+			if(audio.play();){
 				alert(data);
 			}
 		});

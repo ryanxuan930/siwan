@@ -19,8 +19,6 @@ while($row = $result->fetch_row()){
 }
 echo '<script type="text/javascript" src="js/generator/jquery.qrcode.min.js"></script>';
 echo '<h2 style="color: #424242">SIWAN PASS</h2>';
-echo '<div>This is your own SIWAN PASS. After you complete one mission, you have to show the QR Code on this pass to the staff, and then you will receive one point. The more mission you complete, the more points you get. If you need any assistance, feel free to ask for help~ (English is available!)</div>';
-echo '<div>這是你獨一無二的西灣通行證. 當你完成一關後，別忘了出示這上面的QR Code讓關主幫你掃碼積點，完成越多關就能獲得越多點數唷！如果在過程中需要任何協助，儘管告訴我們，我們都很樂意幫助你唷～</div>';
 echo '<div id="qrcode"></div>';
 echo '<hr>';
 echo '<div class="participant">['.$id.']</div>';
@@ -66,6 +64,8 @@ echo '</table>';
 if($present){
 	echo '<div class="border"><span class="material-icons">stars</span> 獎品已領取 Rewarded </div>';
 }
+echo '<div class="border">This is your own SIWAN PASS. After you complete one mission, you have to show the QR Code on this pass to the staff, and then you will receive one point. The more mission you complete, the more points you get. If you need any assistance, feel free to ask for help~ (English is available!)</div>';
+echo '<div class="border">這是你獨一無二的西灣通行證. 當你完成一關後，別忘了出示這上面的QR Code讓關主幫你掃碼積點，完成越多關就能獲得越多點數唷！如果在過程中需要任何協助，儘管告訴我們，我們都很樂意幫助你唷～</div>';
 echo '<div class="border">遊戲廣播：<hr><div id="announce"></div></div>';
 echo '<button class="btn" onClick="logout()">登出 Log Out</button>';
 echo '<script>';

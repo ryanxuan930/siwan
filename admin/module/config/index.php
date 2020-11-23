@@ -26,6 +26,6 @@ echo '<button onClick="alertSubmit()" style="color:white;background-color: #E651
 echo '</div>';
 echo '<div class="console box">';
 echo '<h2>新增使用者</h2><hr>';
-echo '<button onClick="window.open(\'module/auth/account.php\')" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">送出公告</button>';
+echo '<button onClick="window.open(\'module/auth/account.php\')" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">開啟頁面</button>';
 echo '</div>';
 ?>

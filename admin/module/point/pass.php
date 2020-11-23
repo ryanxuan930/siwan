@@ -9,7 +9,6 @@ while($row = $result->fetch_row()){
 	$section = $row[4];
 }
 echo $db->error();
-echo 'stuid:'.$stu_id.' host:'.$host.' section:'.$section;
 switch($section){
 	case 1:
 		$sec = 'sec1';

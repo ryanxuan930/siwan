@@ -40,6 +40,7 @@ body, html{
 
 /* Set a style for the submit button */
 .btn {
+	margin: 5px 0;
 	background-color: orangered;
 	color: white;
 	padding: 16px 20px;

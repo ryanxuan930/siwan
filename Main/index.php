@@ -27,7 +27,7 @@
 	</div>
 <script>
 var code = Date.now();
-console.log(code.substr(3,10));
+console.log(code.substring(3,10));
 function form() {
   	var x = document.forms["login_form"]["id"].value;
 	var code = Date.now();

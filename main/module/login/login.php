@@ -58,3 +58,5 @@ if($result->num_rows){
 	</div>
 </body>
 </html>
+*/
+?>

@@ -28,7 +28,7 @@
 	</div>
 <script>
 function generate(){
-	document.getElementById("form_input").value = "SIWAN" + Date.now().toString().substr(8,5);
+	document.getElementById("form_input").value = "SWNC" + Date.now().toString().substr(7,6);
 }	
 </script>
 </body>

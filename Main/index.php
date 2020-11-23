@@ -28,7 +28,16 @@
 	</div>
 <script>
 function generate(){
-	document.getElementById("form_input").value = "SWNC" + Date.now().toString().substr(7,6);
+	if(Date.now().toString().substr(12,1)<3){
+		document.getElementById("form_input").value = "SWNR" + Date.now().toString().substr(7,6);
+	}else if(Date.now().toString().substr(12,1)<6){
+		document.getElementById("form_input").value = "SWNY" + Date.now().toString().substr(7,6);
+	}else if(Date.now().toString().substr(12,1)<9){
+		document.getElementById("form_input").value = "SWNA" + Date.now().toString().substr(7,6);
+	}else{
+		document.getElementById("form_input").value = "SWNN" + Date.now().toString().substr(7,6);
+	}
+	
 }	
 </script>
 </body>

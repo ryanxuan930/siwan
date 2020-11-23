@@ -21,6 +21,7 @@
 			<option value="5">系統管理員</option>
 			<option value="6">超級管理員</option>
 		</select>
+		<button type="submit">送出</button>
 	</form>
 </body>
 </html>

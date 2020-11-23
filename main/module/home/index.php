@@ -68,6 +68,7 @@ echo '<div class="border style="padding: 5px">Instruction: <hr>Hey! '.$name.'. T
 echo '<div class="border" style="padding: 5px">說明: <hr>嗨！'.$name.'。這是你獨一無二的西灣通行證。<br>當你完成一關後，別忘了出示這上面的QR Code讓關主幫你掃碼積點，完成越多關就能獲得越多點數唷！<br>如果在過程中需要任何協助，儘管告訴我們，我們都很樂意幫助你唷～</div>';
 echo '<div class="border">Annoucement 遊戲廣播：<hr><div id="announce"></div></div>';
 echo '<button class="btn" onClick="logout()">登出 Log Out</button>';
+echo '<button class="btn" >TEST</button>';
 echo '<script>';
 echo '$("#qrcode").qrcode({width: 256,height: 256,text: "'.$id.'"});';
 echo '</script>';

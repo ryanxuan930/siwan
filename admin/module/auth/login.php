@@ -20,7 +20,7 @@ if($result->num_rows){
 		exit();
 	}else{
 		echo "密碼錯誤'.$password.' '.$hash.'";
-		echo '<script>alert("密碼錯誤");location.href="../../index.php";</script>';
+		//echo '<script>alert("密碼錯誤");location.href="../../index.php";</script>';
 	}
 }else{
 	echo '<script>alert("帳號錯誤");location.href="../../index.php";</script>';

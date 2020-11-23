@@ -6,6 +6,7 @@ if(isset($_POST['id'])){
 }else{
 	$id = date("mdHis");
 }
+echo $id;
 /*
 session_start();
 $_SESSION['id']=$id;

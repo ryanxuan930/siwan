@@ -27,8 +27,9 @@
   		</form>
 	</div>
 <script>
-function form() {
+function form(){
   	document.getElementById("form_input").value = Date.now().toString().substr(3,10);
+	return 1;
 }	
 </script>
 </body>

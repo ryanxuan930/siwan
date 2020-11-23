@@ -21,7 +21,7 @@
     		<input type="text" placeholder="Enter Your Student ID" name="id" maxlength="10" required>
 			<button type="submit" class="btn">GO</button>
 			<div>
-				<label style="color: #BDBDBD">If you don't have a student ID, don't worry, after you click the "GO" button, the system will automatically generate a unique serial number for you. BTW, DON'T FORGET IT, because it's your passcode in SIWAN~<br>如果你沒有學號也沒關係，按下GO以後，系統會自動幫你產出一組序號。喔還有！別忘了要記下這組序號，因為它是你接下來在西灣的通行碼唷～</label>
+				<label style="color: #BDBDBD">If you don't have a student ID, don't worry. After you click the "GO" button, the system will automatically generate a unique serial number for you. BTW, DON'T FORGET IT, because it's your passcode in SIWAN~<br>如果你沒有學號也沒關係，按下GO以後，系統會自動幫你產出一組序號。喔還有！別忘了要記下這組序號，因為它是你接下來在西灣的通行碼唷～</label>
 			</div>
   		</form>
 	</div>

@@ -1,7 +1,11 @@
 <?php
 include("../../../database.php");
 include("../../../dbclass.php");
-$id = $_POST['id'];
+if(isset($_POST['id'])){
+	$id = $_POST['id'];
+}else{
+	$id = date("mdHis");
+}
 session_start();
 $_SESSION['id']=$id;
 $db = new database('seiawan');

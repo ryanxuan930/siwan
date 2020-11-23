@@ -1,14 +1,7 @@
 <?php
 include("../../../database.php");
 include("../../../dbclass.php");
-if(isset($_POST['id'])){
-	echo 'a';
-	$id = $_POST['id'];
-}else{
-	echo 'b';
-	$id = date("mdHis");
-}
-echo $id;
+$id = $_POST['id'];
 /*
 session_start();
 $_SESSION['id']=$id;

@@ -29,13 +29,13 @@
 <script>
 function generate(){
 	if(Date.now().toString().substr(12,1)<3){
-		document.getElementById("form_input").value = "SWNR" + Date.now().toString().substr(7,6);
+		document.getElementById("form_input").value = "R" + Date.now().toString().substr(3,10);
 	}else if(Date.now().toString().substr(12,1)<6){
-		document.getElementById("form_input").value = "SWNY" + Date.now().toString().substr(7,6);
+		document.getElementById("form_input").value = "Y" + Date.now().toString().substr(3,10);
 	}else if(Date.now().toString().substr(12,1)<9){
-		document.getElementById("form_input").value = "SWNA" + Date.now().toString().substr(7,6);
+		document.getElementById("form_input").value = "A" + Date.now().toString().substr(3,10);
 	}else{
-		document.getElementById("form_input").value = "SWNN" + Date.now().toString().substr(7,6);
+		document.getElementById("form_input").value = "N" + Date.now().toString().substr(3,10);
 	}
 	
 }	

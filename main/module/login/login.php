@@ -4,9 +4,9 @@ include("../../../dbclass.php");
 if(isset($_POST['id'])){
 	$id = $_POST['id'];
 }else{
-	$code = date("m-d H:i:s");
-	$id = substr($code,0,2).substr($code,3,2).substr($code,6,2).substr($code,9,2).substr($code,12,2);
+	$id = date("mdHis");
 }
+/*
 session_start();
 $_SESSION['id']=$id;
 $db = new database('seiawan');

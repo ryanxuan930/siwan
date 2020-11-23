@@ -8,7 +8,8 @@ $result = $db->select_where(0,'account="'.$host.'"');
 while($row = $result->fetch_row()){
 	$section = $row[4];
 }
-echo 'a1\n';
+echo $db->error();
+echo $section;
 switch($section){
 	case 1:
 		$sec = 'sec1';
@@ -53,10 +54,8 @@ switch($section){
 		
 		break;
 }
-echo 'a2\n';
 $db->table('participant');
 $db->update($sec.'=1, current="'.$section.'"','stu_id="'.$stu_id.'"');
-echo 'a4\n';
 if($db->error()){
 	echo '連線錯誤\n'.$db->error();
 }else{
@@ -68,5 +67,4 @@ if($db->error()){
 	$db->table('data');
 	$db->update('refresh="'.$stu_id.'"','1=1');
 }
-echo 'a4\n';
 ?>

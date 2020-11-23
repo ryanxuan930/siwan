@@ -2,7 +2,6 @@
 include("../../../database.php");
 include("../../../dbclass.php");
 $id = $_POST['id'];
-/*
 session_start();
 $_SESSION['id']=$id;
 $db = new database('seiawan');
@@ -54,5 +53,3 @@ if($result->num_rows){
 	</div>
 </body>
 </html>
-*/
-?>

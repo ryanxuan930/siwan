@@ -19,12 +19,10 @@ if($result->num_rows){
 		header('Location: ../../main.php');
 		exit();
 	}else{
-		echo 'a1';
-		//echo '<script>alert("帳號或密碼錯誤");location.href="../../index.php";</script>';
+		echo '<script>alert("密碼錯誤");location.href="../../index.php";</script>';
 	}
 }else{
-	echo 'a2';
-	//echo '<script>alert("帳號或密碼錯誤");location.href="../../index.php";</script>';
+	echo '<script>alert("帳號錯誤");location.href="../../index.php";</script>';
 }
 
 ?>

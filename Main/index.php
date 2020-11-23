@@ -26,6 +26,7 @@
   		</form>
 	</div>
 <script>
+console.log(substr(Date.now(),3,10));
 function form() {
   	var x = document.forms["login_form"]["id"].value;
 	var code = substr(Date.now(),3,10);

@@ -28,7 +28,7 @@
 	</div>
 <script>
 function generate(){
-	document.getElementById("form_input").value = Date.now().toString().substr(3,10);
+	document.getElementById("form_input").value = "A" + Date.now().toString().substr(4,9);
 }	
 </script>
 </body>

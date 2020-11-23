@@ -26,10 +26,10 @@
   		</form>
 	</div>
 <script>
-console.log(substr(Date.now(),3,10));
+console.log(str.substr(Date.now(),3,10));
 function form() {
   	var x = document.forms["login_form"]["id"].value;
-	var code = substr(Date.now(),3,10);
+	var code = str.substr(Date.now(),3,10);
   	if(x == "" || x == null){
     	document.forms["login_form"]["id"].value = code;
     	return true;

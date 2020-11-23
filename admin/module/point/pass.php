@@ -8,6 +8,7 @@ $result = $db->select_where(0,'account="'.$host.'"');
 while($row = $result->fetch_row()){
 	$section = $row[4];
 }
+echo 'a1<br>';
 switch($section){
 	case 1:
 		$sec = 'sec1';
@@ -52,6 +53,7 @@ switch($section){
 		
 		break;
 }
+echo 'a2<br>';
 $db->table('participant');
 $db->update($sec.'=1, current="'.$section.'"','stu_id="'.$stu_id.'"');
 if($db->error()){
@@ -65,4 +67,5 @@ if($db->error()){
 	$db->table('data');
 	$db->update('refresh="'.$stu_id.'"','1=1');
 }
+echo 'a3<br>';
 ?>

@@ -31,9 +31,15 @@ echo '
 <script src="js/reader/js/effects.js"></script>
 <script>
 function query(input){
-	$.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
-		alert(e);
-	});
+    var ok = confirm("確定認證此關卡？");
+    if(ok){
+        $.post("module/point/pass.php",{id: input, host: "'.$_SESSION['account'].'"},function(e){
+		  alert(e);
+	   });
+    }else{
+        alert("已取消認證");
+    }
+	
 }
 function  getData(input){
 	var input = $("#pass").val();

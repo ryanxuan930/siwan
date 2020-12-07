@@ -9,6 +9,7 @@ while($row = $result->fetch_row()){
 	$section = $row[4];
 }
 echo $db->error();
+$award=0;
 switch($section){
 	case 1:
 		$sec = 'sec1';
@@ -44,17 +45,28 @@ switch($section){
 			$present = $row[9];
 		}
 		if($present){
+            $award = 0;
 			$remark = '已兌換過獎品';
-		}else if($sum>0){
+		}else if($sum<5){
+            $award = 0;
+			$remark = '只通過'.$sum.'個關卡，不能兌換';
+		}else if($sum>4){
+            $award = 1;
 			$remark = '共通過'.$sum.'個關卡';
 		}else{
+            $award = 0;
 			$remark = '尚未有點數可兌換';
 		}
-		
 		break;
 }
 $db->table('participant');
-$db->update($sec.'=1, current="'.$section.'"','stu_id="'.$stu_id.'"');
+if($section==7){
+    if($award){
+        $db->update($sec.'=1, current="'.$section.'"','stu_id="'.$stu_id.'"');
+    }
+}else{
+    $db->update($sec.'=1, current="'.$section.'"','stu_id="'.$stu_id.'"');
+}
 if($db->error()){
 	echo '連線錯誤\n'.$db->error();
 }else{

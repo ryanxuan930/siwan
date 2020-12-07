@@ -47,10 +47,10 @@ switch($section){
 		if($present){
             $award = 0;
 			$remark = '已兌換過獎品';
-		}else if($sum<5){
+		}else if($sum<4){
             $award = 0;
 			$remark = '只通過'.$sum.'個關卡，不能兌換';
-		}else if($sum>4){
+		}else if($sum>3){
             $award = 1;
 			$remark = '共通過'.$sum.'個關卡';
 		}else{

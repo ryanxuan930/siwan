@@ -27,8 +27,8 @@ if(!isset($_SESSION['id'])){
 		</div>
 		<div style="height: 5vh;"></div>
 		<div class="footer">
-  			<p>© 2020 A Company in Siwan College</p>
-  			<p>Powered by Rikujo from Ryan P.H. Chang</p>
+  			<p>© 2020 Ryan Po-Hsuan Chang</p>
+  			<p>System Powered by Rikujo</p>
 		</div>
 	</div>
 	<div id="sound"></div>

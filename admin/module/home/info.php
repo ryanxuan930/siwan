@@ -29,7 +29,7 @@ echo '<tr><td>溝通媒介</td><td>'.$sec4.' 人</td></tr>';
 echo '<tr><td>摩斯密碼</td><td>'.$sec5.' 人</td></tr>';
 echo '<tr><td>聽力輔助</td><td>'.$sec6.' 人</td></tr>';
 echo '<tr><td>禮物兌換</td><td>'.$present.' 人</td></tr>';
-echo '<tr><td>累計人數</td><td>'.($result->num_rows).' 人</td></tr>';
+echo '<tr><td>註冊人數</td><td>'.($result->num_rows).' 人</td></tr>';
 echo '</table>';
 echo "<div>更新時間：".date("Y-m-d H:i:s")."</div>";
 ?>

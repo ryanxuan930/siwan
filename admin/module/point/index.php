@@ -51,6 +51,10 @@ function  getData(input){
 </script>
 ';
 echo '<div class="console box">';
+echo '<h1>看好自己的組別再掃!!!!</h1>';
+echo '<h1>兌換完禮物要掃碼!!!!</h1>';
+echo '</div>';
+echo '<div class="console box">';
 echo '<h2>關卡選擇</h2>';
 echo '<hr>';
 echo '<form id="section">';
@@ -68,11 +72,13 @@ echo '<script src="js/point.js"></script>';
 echo '</div>';
 echo '<div class="console box">';
 echo '<h2>通關認證</h2>';
+echo '<h1>你有確定好組別嗎???</h1>';
 echo '<hr>';
 echo '
 <div id="scan_display"></div>
 <button id="scan" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">掃描QR Code</button>
 ';
+echo '<h1>要確定好組別哦!!!</h1>';
 echo '<input type="text" id="pass" style="width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;" name="student" placeholder="請輸入通關者學號" required />';
 echo '<button onClick="getData()" style="color:white;background-color: #E65100;width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 4px;cursor: pointer;">完成本關卡</button>';
 echo '</div>';

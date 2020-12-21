@@ -27,7 +27,7 @@ if(!isset($_SESSION['id'])){
 		</div>
 		<div style="height: 5vh;"></div>
 		<div class="footer">
-  			<p>© 2020 Ryan Po-Hsuan Chang</p>
+  			<p>© 2020 張栢瑄版權所有</p>
   			<p>System Powered by Rikujo from ryanxuan930</p>
 		</div>
 	</div>
